@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+
+    <link rel="stylesheet" href="./output.css">
+    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="w-full shadow-md bg-white flex items-center justify-between h-14">
+
+        <!-- Left div -->
+        <div class='flex items-center '>
+            <!-- Facebook Logo -->
+            <img class="h-10 w-10 rounded-full mx-2 hover:cursor-pointer" src="../src/images/logo.png"
+                alt="Facebook icon">
+
+            <!-- Search and input -->
+            <div class='flex'>
+                <label class='relative border-none p-2'>
+                    <!-- Search icon -->
+                    <img class="h-4 w-8 rounded-full absolute mt-3 px-2" src="../src/images/search.png" alt="">
+                    <!-- Search bar -->
+                    <input type="text"
+                        class="px-8 py-1 w-full h-9 rounded-full focus:outline-none bg-gray-100 placeholder:px-4 placeholder:text-[14px]"
+                        placeholder='Search Facebook'>
+                </label>
+            </div>
+        </div>
+        <!-- End of Left div -->
+
+        <!-- Middle div -->
+        <div class="items-center flex gap-10  h-full pt-2">
+            <!-- Div for home button -->
+            <div class="px-10 active:fill-blue-600 border-b-2 border-blue-400 hover:bg-gray-100 hover:rounded-lg">
+                <a href="#" class="focus:underline">
+                    <img class="h-12 w-8 focus:border-black" src="../src/images/home_black_24dp.svg" alt="">
+                </a>
+            </div>
+            <!-- div for groups button -->
+            <div class="px-10 hover:bg-gray-100 hover:rounded-lg h-full pb-3 pt-2">
+                <a href="#" class="focus:underline">
+                    <img class="h-8 w-8 bg-white border rounded-full" src="../src/images/groups_black_24dp.svg" alt="">
+                </a>
+            </div>
+            <!-- div for add friend button -->
+            <div class="px-10 hover:bg-gray-100 hover:rounded-lg ">
+                <a href="#" class="focus:underline">
+                    <img class="h-12 w-8 focus:border-black" src="../src/images/people_black_24dp.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- End of middle div -->
+
+        <!-- Right div -->
+        <div class="flex gap-3 m-3 border-none items-center">
+            <div class="hover:bg-gray-200 rounded-full p-1 outline-none flex items-center hover:cursor-pointer">
+                <!-- User profile and name -->
+                <div>
+                    <img src="../src/images/IMG_20210815_190401_500~2.jpg" alt=""
+                        class="h-7 w-7 outline-none rounded-full">
+                </div>
+                <div class="rounded-full">
+                    <span>Kelvin </span>
+                </div>
+
+            </div>
+            <div>
+                <!-- Icons:: should contain divs also -->
+                <img src="../src/images/apps.png" alt=""
+                    class="h-10 w-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer p-3">
+            </div>
+            <div>
+                <img src="../src/images/messenger.png" alt=""
+                    class="h-10 w-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer p-3">
+            </div>
+            <div>
+                <img src="../src/images/bell.png" alt=""
+                    class="h-10 w-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer p-3">
+            </div>
+            <div>
+                <img src="../src/images/down-filled-triangular-arrow.png" alt=""
+                    class="h-10 w-10 bg-gray-200 hover:bg-gray-300 hover:cursor-pointer rounded-full p-3">
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Contents -->
+    <div class="flex">
+        <div class="w-[23%]"></div>
+        <div class="w-[53%]"></div>
+        <div class="w-[24%]"></div>
+    </div>
+</body>
+
+</html>
