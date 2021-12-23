@@ -13,7 +13,7 @@
 
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <nav class="w-full shadow-md bg-white flex items-center justify-between h-14">
+    <nav class="w-full shadow-md bg-white flex items-center justify-between h-14 fixed">
 
         <!-- Left div -->
         <div class='flex items-center '>
@@ -38,7 +38,7 @@
         <!-- Middle div -->
         <div class="items-center flex gap-10  h-full pt-2">
             <!-- Div for home button -->
-            <div class="px-10 active:fill-blue-600 border-b-2 border-blue-400 hover:bg-gray-100 hover:rounded-lg">
+            <div class="px-10 active:fill-blue-500 border-b-2 border-blue-400 hover:bg-gray-100 hover:rounded-lg">
                 <a href="#" class="focus:underline">
                     <img class="h-12 w-8 focus:border-black" src="../src/images/home_black_24dp.svg" alt="">
                 </a>
@@ -93,8 +93,72 @@
     </nav>
 
     <!-- Contents -->
-    <div class="flex">
-        <div class="w-[23%]"></div>
+    <div class="flex pt-14">
+        <!-- Left Pane -->
+        <div class="w-[23%] overflow-y">
+            <!-- Upside -->
+            <aside class="m-3">
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/IMG_20210815_190401_500~2.jpg" alt=""
+                        class="h-7 w-7 outline-none rounded-full">
+                    <span>Domeh John Kelvin Tetteh</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/friends.png" alt="" class="h-7 w-7 outline-none rounded-full">
+                    <span>Friends</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/group.png" alt=""
+                        class="h-7 w-7 outline-none bg-gradient-to-r from-blue-300 to-blue-500 rounded-full">
+                    <span>Groups</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/shop.png" alt="" class="h-7 w-7 outline-none">
+                    <span>Marketplace</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/facebook_watch.png" alt="" class="h-7 w-7 outline-none">
+                    <span>Watch</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/wall-clock.png" alt="" class="h-7 w-7 outline-none rounded-full">
+                    <span>Memories</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/bookmark.png" alt="" class="h-7 w-7 outline-none rounded-full">
+                    <span>Saved</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/flag.png" alt="" class="h-7 w-7 outline-none rounded-full">
+                    <span>Pages</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/down-filled-triangular-arrow.png" alt=""
+                        class="h-7 w-7 outline-none rounded-full bg-gray-300 p-2">
+                    <span>See more</span>
+                </div>
+            </aside>
+
+            <!-- Downside -->
+            <aside class="m-3 pt-2">
+                <header class="border-t-2 pt-4 pl-2">
+                    <span class="font-bold text-gray-400">Your Shortcuts</span>
+                </header>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/pool.jpeg" alt="" class="h-7 w-7 outline-none rounded-full">
+                    <span>8 Ball Pool</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/fifa.jpeg" alt="" class="h-7 w-7 outline-none rounded-full">
+                    <span>Fifa 22</span>
+                </div>
+                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                    <img src="../src/images/cod.jpeg" alt="" class="h-7 w-7 outline-none rounded-full">
+                    <span>Call of Duty</span>
+                </div>
+            </aside>
+
+        </div>
         <div class="w-[53%]"></div>
         <div class="w-[24%]"></div>
     </div>
