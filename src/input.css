@@ -10,6 +10,9 @@
     @apply flex items-center space-x-2 rounded-xl hover:bg-gray-100 p-2;
   }
   .btn {
-    @apply rounded-xl p-3;
+    @apply rounded-xl p-3 w-[50%];
+  }
+  .left {
+    @apply flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2;
   }
 }
