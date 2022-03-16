@@ -14,11 +14,11 @@
 
 <body class="bg-gray-100">
     <!-- Navbar -->
-    <header class="w-full">
+    <header class="">
         <nav class="shadow-md bg-white flex justify-between items-center h-14 fixed w-full top-0 left-0 right-0 z-50">
         
             <!-- Left div -->
-            <div class='flex items-center w-[25%]'>
+            <div class='flex items-center w-[120px] md:w-[300px]'>
                 <!-- Facebook Logo -->
                 <img class="h-10 w-10 rounded-full mx-2 hover:cursor-pointer" src="./src/images/logo.png" alt="Facebook icon">
         
@@ -36,21 +36,21 @@
             <!-- End of Left div -->
         
             <!-- Middle div -->
-            <div class="hidden items-center md:flex justify-center w-[40%] shrink-0 space-x-1 md:space-x-5 h-full pt-2">
+            <div class="hidden items-center md:flex justify-center  lg:w-[24rem]  shrink-0 space-x-1 md:space-x-5 h-full ">
                 <!-- Div for home button -->
-                <div class="px-10 active:fill-blue-500 border-b-2 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
+                <div class="w-32 flex items-center justify-center active:fill-blue-500 border-b-2 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="focus:underline">
                         <img class="flex shrink-0 h-12 w-8 focus:border-black" src="./src/images/home_black_24dp.svg" alt="">
                     </a>
                 </div>
                 <!-- div for groups button -->
-                <div class="px-10 hover:bg-gray-100 hover:rounded-lg h-full pb-3 pt-2">
+                <div class=" hover:bg-gray-100 w-32 flex items-center justify-center hover:rounded-lg h-full pb-3 pt-2">
                     <a href="#" class="focus:underline">
-                        <img class="h-8 w-8 bg-white border rounded-full" src="./src/images/groups_black_24dp.svg" alt="">
+                        <img class="h-8 w-8 bg-white border rounded-full " src="./src/images/groups_black_24dp.svg" alt="">
                     </a>
                 </div>
                 <!-- div for add friend button -->
-                <div class="px-10 hover:bg-gray-100 hover:rounded-lg ">
+                <div class=" hover:bg-gray-100 hover:rounded-lg w-32 flex items-center justify-center ">
                     <a href="#" class="focus:underline">
                         <img class="h-12 w-8 focus:border-black" src="./src/images/people_black_24dp.svg" alt="">
                     </a>
@@ -67,7 +67,7 @@
                 </div>
         
                 <!-- Right div -->
-                <div class="flex gap-3 m-3 border-none items-center">
+                <div class="flex gap-3 m-3 border-none items-center md:w-[20rem]">
                     <div
                         class="hidden hover:bg-gray-200 rounded-full p-1 outline-none md:flex items-center hover:cursor-pointer space-x-2">
                         <!-- User profile and name -->
@@ -298,7 +298,7 @@
                         <img src="./src/images/WOYM/video-button.png" alt="" class="h-7 w-7">
                         <p class="text-blue-500 font-semibold text-sm">Create room</p>
                     </div>
-                    <div class="flex items-center justify-center gap-4">
+                    <div class="flex items-center justify-center gap-4 overflow-hidden">
                         <img src="./src/images/Story/juder.jpg" alt="" class='h-10 w-10 rounded-full'>
                         <img src="./src/images/createroom/billgates.jpeg" alt="" class="h-10 w-10 rounded-full object-cover">
                         <img src="./src/images/createroom/mark.jpeg" alt="" class="h-10 w-10 rounded-full object-cover">
@@ -389,7 +389,7 @@
 
 
         <!-- Right Section -->
-        <div class="hidden md:flex flex-col w-[25%] mr-3 pt-8">
+        <div class="hidden md:flex flex-col md:w-[26rem] mr-3 pt-8 overflow-y-auto max-h-screen">
 
             <div class="bg-white h-48 w-[100%] rounded-xl p-3">
                 <div class="flex items-center text-sm space-x-2 text-center">
