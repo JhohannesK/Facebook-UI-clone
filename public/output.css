@@ -750,6 +750,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 20rem;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -962,6 +966,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-blue-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-top {
+  background-position: top;
+}
+
+.bg-left-top {
+  background-position: left top;
 }
 
 .object-cover {
