@@ -106,7 +106,7 @@
     <!-- Contents -->
     <div class="flex gap-4 pt-12 w-full xl:gap-10">
         <!-- Left Pane -->
-        <div class="hidden lg:flex flex-col max-h-screen shrink-0 text-sm tracking-wide overflow-auto" id='left-pane'>
+        <div class="hidden xl:flex flex-col h-[37rem] shrink-0 text-sm tracking-wide overflow-y-auto scrollbar-hide" id='left-pane'>
             <!-- Upside -->
             <aside class="m-3">
                 <div class="left">
@@ -185,81 +185,84 @@
 
 
         <!-- Middle Section -->
-        <div class="lg:w-[70%] w-full flex items-center justify-center shrink" id="section">
-            <section class="flex flex-col items-center pb-32" >
+        <div class="w-full flex items-center justify-center shrink " id="section">
+            <section class="flex flex-col items-center pb-32 " >
                 <div class="flex pt-7 pl-10 mb-6 gap-2 items-center justify-center">
 
                     <!-- Stories -->
-                    <div class="relative text-center hover:contrast-[.8] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 cursor-pointer">
-                        <div class='w-28'>
-                            <img src="./src/images/IMG_20210815_190401_500~2.jpg"  alt="" class="rounded-md h-48 object-cover">
-                        </div>
-                        <div class='bg-white absolute h-12 top-36 w-28 rounded-b-md'>
-                            <div class='mt-5'>
-                                <span class="text-sm">Create Story</span>
+                    <div class="w-[25rem] lg:w-[40rem] flex items-center justify-center gap-x-3 overflow-x-auto scrollbar-hide">
+                        <div class="relative text-center hover:contrast-[.8] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 cursor-pointer">
+                            <div class=''>
+                                <img src="./src/images/IMG_20210815_190401_500~2.jpg"  alt="" class="rounded-md h-48 object-cover">
+                            </div>
+                            <div class='bg-white absolute h-12 top-36 w-28 rounded-b-md'>
+                                <div class='mt-5'>
+                                    <span class="text-sm">Create Story</span>
+                                </div>
+                            </div>
+                            <div class="absolute pl-10 top-32">
+                                <img src="./src/images/plus.png" alt="" class="h-9 w-9 border-4 border-white object-cover rounded-full bg-white">
                             </div>
                         </div>
-                        <div class="absolute pl-10 top-32">
-                            <img src="./src/images/plus.png" alt="" class="h-9 w-9 border-4 border-white object-cover rounded-full bg-white">
-                        </div>
-                    </div>
 
-                    <div class="relative text-center hover:contrast-[.8] cursor-pointer">
-                        <div class='w-28'>
-                            <img src="./src/images/Story/harri1.jpg" alt="" class="rounded-md h-48 w-32 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-                        </div>
-                        <div class='absolute h-5 top-32 w-24 rounded-b-md'>
-                            <div class='mt-5'>
-                                <span class="text-sm text-white text-semibold">Obaapa Fafali</span>
+                        <div class="relative text-center hover:contrast-[.8] cursor-pointer">
+                            <div class='w-28'>
+                                <img src="./src/images/Story/harri1.jpg" alt="" class="rounded-md h-48 w-32 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                            </div>
+                            <div class='absolute h-5 top-32 w-24 rounded-b-md'>
+                                <div class='mt-5'>
+                                    <span class="text-sm text-white text-semibold">Obaapa Fafali</span>
+                                </div>
+                            </div>
+                            <div class="absolute p-3 top-0">
+                                <img src="./src/images/Story/harri.jpg" alt="" class="h-9 w-9 border-4 border-blue-500 rounded-full bg-white">
                             </div>
                         </div>
-                        <div class="absolute p-3 top-0">
-                            <img src="./src/images/Story/harri.jpg" alt="" class="h-9 w-9 border-4 border-blue-500 rounded-full bg-white">
-                        </div>
-                    </div>
 
-                    <div class="relative text-center hover:contrast-[.8] cursor-pointer">
-                        <div class='w-28'>
-                            <img src="./src/images/Story/treve1.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-                        </div>
-                        <div class='absolute h-5 top-32 w-24 rounded-b-md'>
-                            <div class='mt-5'>
-                                <span class="text-sm text-white text-semibold">Treve Paul</span>
+                        <div class="relative text-center hover:contrast-[.8] cursor-pointer">
+                            <div class='w-28'>
+                                <img src="./src/images/Story/treve1.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                            </div>
+                            <div class='absolute h-5 top-32 w-24 rounded-b-md'>
+                                <div class='mt-5'>
+                                    <span class="text-sm text-white text-semibold">Treve Paul</span>
+                                </div>
+                            </div>
+                            <div class="absolute p-3 top-0">
+                                <img src="./src/images/Story/treve.jpg" alt="" class="h-9 w-9 border-4 border-blue-500 rounded-full bg-white">
                             </div>
                         </div>
-                        <div class="absolute p-3 top-0">
-                            <img src="./src/images/Story/treve.jpg" alt="" class="h-9 w-9 border-4 border-blue-500 rounded-full bg-white">
-                        </div>
-                    </div>
 
-                    <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
-                        <div class='w-28'>
-                            <img src="./src/images/Story/kendra.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-                        </div>
-                        <div class='absolute h-5 top-32 w-24 rounded-b-md'>
-                            <div class='mt-5'>
-                                <span class="text-sm text-white text-semibold">Tieku Kendra</span>
+                        <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
+                            <div class='w-28'>
+                                <img src="./src/images/Story/kendra.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                            </div>
+                            <div class='absolute h-5 top-32 w-24 rounded-b-md'>
+                                <div class='mt-5'>
+                                    <span class="text-sm text-white text-semibold">Tieku Kendra</span>
+                                </div>
+                            </div>
+                            <div class="absolute p-3 top-0">
+                                <img src="./src/images/Story/tieku.jpg" alt="" class="h-9 w-9 border-4 rounded-full border-blue-500 bg-white">
                             </div>
                         </div>
-                        <div class="absolute p-3 top-0">
-                            <img src="./src/images/Story/tieku.jpg" alt="" class="h-9 w-9 border-4 rounded-full border-blue-500 bg-white">
-                        </div>
-                    </div>
-                    
-                    <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
-                        <div class='w-28'>
-                            <img src="./src/images/Story/pinto1.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
-                        </div>
-                        <div class='absolute h-5 top-32 w-24 rounded-b-md'>
-                            <div class='mt-5'>
-                                <span class="text-sm text-white text-semibold truncate">Pinto Aaron</span>
+                        
+                        <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
+                            <div class='w-28'>
+                                <img src="./src/images/Story/pinto1.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
                             </div>
-                    
-                        </div>
-                        <div class="absolute p-3 top-0">
-                            <img src="./src/images/Story/pinto.jpg" alt="" class="h-9 w-9 border-blue-500 border-4 rounded-full">
+                            <div class='absolute h-5 top-32 w-24 rounded-b-md'>
+                                <div class='mt-5'>
+                                    <span class="text-sm text-white text-semibold truncate">Pinto Aaron</span>
+                                </div>
+                        
+                            </div>
+                            <div class="absolute p-3 top-0">
+                                <img src="./src/images/Story/pinto.jpg" alt="" class="h-9 w-9 border-blue-500 border-4 rounded-full">
+                            </div>
                         </div>
                     </div>
+                   
                     <!-- <div class="bg-red-500">
                         <img src="../src/images/right.png" alt="" class="h-9 w-9 bg-white rounded-full">
                     </div> -->
@@ -293,13 +296,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="maincen flex space-x-4 items-center">
+                <div class="md:maincen flex space-x-4 items-center">
                     <div class="flex items-center space-x-2 p-2 tracking-wide border-2 border-gray-100 hover:bg-gray-200 rounded-full">
                         <img src="./src/images/WOYM/video-button.png" alt="" class="h-7 w-7">
                         <p class="text-blue-500 font-semibold text-sm">Create room</p>
                     </div>
-                    <div class="flex items-center justify-center gap-4 overflow-hidden">
-                        <img src="./src/images/Story/juder.jpg" alt="" class='h-10 w-10 rounded-full'>
+                    <div class="flex items-center justify-center gap-4 overflow-x-auto scrollbar-hide">
+                        <img src="./src/images/Story/juder.jpg" alt="" class='hidden lg:flex h-10 w-10 rounded-full'>
                         <img src="./src/images/createroom/billgates.jpeg" alt="" class="h-10 w-10 rounded-full object-cover">
                         <img src="./src/images/createroom/mark.jpeg" alt="" class="h-10 w-10 rounded-full object-cover">
                         <img src="./src/images/createroom/reigner.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
@@ -309,7 +312,7 @@
                 </div>
 
                 <!-- Feed -->
-                <div class="maincen">
+                <div class="w-screen p-2 lg:maincen">
                     <div class="flex justify-between">
                         <div class="flex space-x-2">
                             <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="rounded-full w-9 h-9 object-cover">
@@ -364,21 +367,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center space-x-16 pt-3 border-t-2 items-center">
+                    <div class="flex justify-center space-x-16 pt-3 border-t-2 items-center ">
                         <div class="flex items-center space-x-2">
-                            <img src="./src/images/like.png" alt="" class="w-5 h-7">
-                            <p class="capitalize">like</p>
+                            <img src="./src/images/like.png" alt="" class="w-2 h-5 ">
+                            <p class="capitalize text-sm">like</p>
                         </div>
                         <div class="flex items-center space-x-2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                             </svg>
-                            <p>Comment</p>
+                            <p class="text-sm">Comment</p>
                         </div>
                         <div class="flex items-center space-x-2">
                             <img src="./src/images/share.png" alt="" class="w-7 h-6">
-                            <p>Share</p>
+                            <p class="text-sm">Share</p>
                         </div>
                     </div>
                     
@@ -389,7 +392,7 @@
 
 
         <!-- Right Section -->
-        <div class="hidden md:flex flex-col md:w-[26rem] mr-3 pt-8 overflow-y-auto max-h-screen">
+        <div class="hidden md:flex flex-col md:w-[26rem] lg:w-[40rem] mr-3 pt-8 h-max overflow-y-auto scrollbar-hide">
 
             <div class="bg-white h-48 w-[100%] rounded-xl p-3">
                 <div class="flex items-center text-sm space-x-2 text-center">
