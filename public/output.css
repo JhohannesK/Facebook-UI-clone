@@ -452,7 +452,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .maincen {
   margin-bottom: 1.5rem;
-  width: 80%;
+  width: 78%;
   border-radius: 0.75rem;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -525,20 +525,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0px;
 }
 
-.left-5 {
-  left: 1.25rem;
-}
-
 .top-36 {
   top: 9rem;
 }
 
 .top-32 {
   top: 8rem;
-}
-
-.left-2 {
-  left: 0.5rem;
 }
 
 .z-50 {
@@ -688,12 +680,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 6rem;
 }
 
-.w-\[90\%\] {
-  width: 90%;
+.w-\[30rem\] {
+  width: 30rem;
 }
 
-.w-screen {
-  width: 100vw;
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .w-4 {
@@ -706,6 +698,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[100\%\] {
   width: 100%;
+}
+
+.w-\[40rem\] {
+  width: 40rem;
 }
 
 .shrink-0 {
@@ -939,6 +935,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -986,6 +986,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 2.5rem;
 }
 
+.pl-12 {
+  padding-left: 3rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1000,10 +1004,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-8 {
   padding-top: 2rem;
-}
-
-.pl-12 {
-  padding-left: 3rem;
 }
 
 .text-center {
@@ -1234,30 +1234,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:w-auto {
     width: auto;
   }
+
+  .sm\:w-full {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
-  .md\:maincen {
-    margin-bottom: 1.5rem;
-  }
-
-  .md\:maincen {
-    width: 80%;
-  }
-
-  .md\:maincen {
-    border-radius: 0.75rem;
-  }
-
-  .md\:maincen {
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-  }
-
-  .md\:maincen {
-    padding: 1rem;
-  }
-
   .md\:ml-2 {
     margin-left: 0.5rem;
   }
@@ -1307,7 +1290,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 
   .lg\:maincen {
-    width: 80%;
+    width: 78%;
   }
 
   .lg\:maincen {

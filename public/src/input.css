@@ -4,7 +4,7 @@
 
 @layer components {
 	.maincen {
-		@apply bg-white w-[80%] mb-6  rounded-xl p-4;
+		@apply bg-white w-[78%] mb-6 rounded-xl p-4;
 	}
 	.WOYM {
 		@apply flex items-center space-x-2 rounded-xl hover:bg-gray-100 p-2;
