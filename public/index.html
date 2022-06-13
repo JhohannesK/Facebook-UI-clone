@@ -25,6 +25,7 @@
                 <!-- Search and input -->
                 <div class='flex items-center bg-gray-100 rounded-full ml-2'>
                     <!-- Search icon -->
+                    <!-- FIXME: CHANGE the size the icon -->
                     <img class="item-center flex shrink-0 p-2 h-9 w-10 md:h-5 md:w-5 rounded-full md:ml-2"
                         src="./src/images/search.png" alt="">
                     <!-- Search bar -->
@@ -102,9 +103,11 @@
         
         </nav>
     </header>
+    <!-- End of Navbar -->
 
     <!-- Contents -->
     <div class="flex gap-4 pt-12 w-full xl:gap-10">
+        <!-- TODO: Make content not scroll when when the timeline is being scrolled. -->
         <!-- Left Pane -->
         <div class="hidden xl:flex flex-col h-[37rem] shrink-0 text-sm tracking-wide overflow-y-auto scrollbar-hide" id='left-pane'>
             <!-- Upside -->
@@ -296,6 +299,10 @@
                         </div>
                     </div>
                 </div>
+                <!-- End of What's on your mind! -->
+
+                <!-- Div for Create room -->
+                <!-- TODO: Make icons horizontally scrollable -->
                 <div class="maincen flex space-x-4 items-center">
                     <div class="flex items-center space-x-2 p-2 tracking-wide border-2 border-gray-100 hover:bg-gray-200 rounded-full">
                         <img src="./src/images/WOYM/video-button.png" alt="" class="h-7 w-7">
@@ -310,6 +317,7 @@
                         <img src="./src/images/createroom/isaac.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
                     </div>
                 </div>
+                <!--  End of Create room's div-->
 
                 <!-- Timeline -->
                     <!-- First post :: Start -->
@@ -553,6 +561,7 @@
 
 
         <!-- Right Section -->
+        <!-- FIXME: Make this section fixed and not scroll when middle section is being scrolled. -->
         <div class="hidden md:flex flex-col md:w-[26rem] lg:w-[40rem] mr-3 pt-8 h-max overflow-y-auto scrollbar-hide">
 
             <div class="bg-white h-48 w-[100%] rounded-xl p-3">
@@ -596,6 +605,7 @@
             </div>
 
             <!-- Chats and Contacts -->
+            <!-- REVIEW: Add some hover effect of contacts -->
             <div class="border-t-2 mt-4 pt-4">
                 <div class="flex justify-between items-center">
                     <div>
