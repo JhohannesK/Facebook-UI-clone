@@ -8,7 +8,8 @@
     <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <title>Facebook</title>
 
-    <link rel="stylesheet" href="./output.css">
+    <!-- <link rel="stylesheet" href="./input.css"> -->
+    <link rel="stylesheet" href="../output/output.css">
     <script defer src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
 </head>
 
@@ -17,19 +18,23 @@
 <body class="bg-gray-100">
     <!-- Navbar -->
     <header class="">
-        <nav class="shadow-md bg-white flex justify-between items-center h-14 fixed w-full top-0 left-0 right-0 z-50">
+        <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full bg-white shadow-md h-14">
         
             <!-- Left div -->
             <div class='flex items-center w-[120px] md:w-[300px]'>
                 <!-- Facebook Logo -->
-                <img class="h-10 w-10 rounded-full mx-2 hover:cursor-pointer" src="./src/images/logo.png" alt="Facebook icon">
+                <img class="w-10 h-10 mx-2 rounded-full hover:cursor-pointer" src="./src/images/logo.png" alt="Facebook icon">
         
                 <!-- Search and input -->
-                <div class='flex items-center bg-gray-100 rounded-full ml-2'>
+                <div class='flex items-center pl-3 ml-2 bg-gray-100 rounded-full'>
                     <!-- Search icon -->
                     <!-- FIXME: CHANGE the size the icon -->
-                    <img class="item-center flex shrink-0 p-2 h-9 w-10 md:h-8 md:w-8 rounded-full md:ml-2"
-                        src="./src/images/search.png" alt="">
+                    <!-- <img class="flex w-10 p-2 rounded-full item-center shrink-0 h-9 md:h-8 md:w-8 md:ml-2"
+                        src="./src/images/search.png" alt=""/> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+
                     <!-- Search bar -->
                     <input type="text"
                         class="hidden md:flex items-center px-3 py-1 w-full h-9 rounded-full focus:outline-none bg-gray-100 placeholder:text-[14px]"
@@ -41,29 +46,29 @@
             <!-- Middle div -->
             <div class="hidden items-center md:flex justify-center  lg:w-[24rem]  shrink-0 space-x-1 md:space-x-5 h-full ">
                 <!-- Div for home button -->
-                <div class="w-32 flex items-center justify-center active:fill-blue-500 border-b-2 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
+                <div class="flex items-center justify-center w-32 border-b-2 active:fill-blue-500 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="focus:underline">
-                        <img class="flex shrink-0 h-12 w-8 focus:border-black" src="./src/images/home_black_24dp.svg" alt="">
+                        <img class="flex w-8 h-12 shrink-0 focus:border-black" src="./src/images/home_black_24dp.svg" alt="">
                     </a>
                 </div>
                 <!-- div for groups button -->
-                <div class=" hover:bg-gray-100 w-32 flex items-center justify-center hover:rounded-lg h-full pb-3 pt-2">
+                <div class="flex items-center justify-center w-32 h-full pt-2 pb-3 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="focus:underline">
-                        <img class="h-8 w-8 bg-white border rounded-full " src="./src/images/groups_black_24dp.svg" alt="">
+                        <img class="w-8 h-8 bg-white border rounded-full " src="./src/images/groups_black_24dp.svg" alt="">
                     </a>
                 </div>
                 <!-- div for add friend button -->
-                <div class=" hover:bg-gray-100 hover:rounded-lg w-32 flex items-center justify-center ">
+                <div class="flex items-center justify-center w-32 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="focus:underline">
-                        <img class="h-12 w-8 focus:border-black" src="./src/images/people_black_24dp.svg" alt="">
+                        <img class="w-8 h-12 focus:border-black" src="./src/images/people_black_24dp.svg" alt="">
                     </a>
                 </div>
             </div>
             <!-- End of middle div -->
         
-            <div class="w-full flex md:flex justify-between items-center md:w-auto">
+            <div class="flex items-center justify-between w-full md:flex md:w-auto">
                 <div class="px-4 cursor-pointer md:hidden" id="menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                     </svg>
@@ -72,11 +77,11 @@
                 <!-- Right div -->
                 <div class="flex gap-3 m-3 border-none items-center md:w-[20rem]">
                     <div
-                        class="hidden hover:bg-gray-200 rounded-full p-1 outline-none md:flex items-center hover:cursor-pointer space-x-2">
+                        class="items-center hidden p-1 space-x-2 rounded-full outline-none hover:bg-gray-200 md:flex hover:cursor-pointer">
                         <!-- User profile and name -->
                         <div>
                             <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt=""
-                                class="h-7 w-7 outline-none rounded-full object-cover">
+                                class="object-cover rounded-full outline-none h-7 w-7">
                         </div>
                         <div class="rounded-full">
                             <span>Jhohannes </span>
@@ -86,19 +91,19 @@
                     <div>
                         <!-- Icons:: should contain divs also -->
                         <img src="./src/images/apps.png" alt=""
-                            class="hidden md:flex h-10 w-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer p-3">
+                            class="hidden w-10 h-10 p-3 bg-gray-200 rounded-full md:flex hover:bg-gray-300 hover:cursor-pointer">
                     </div>
                     <div>
                         <img src="./src/images/messenger.png" alt=""
-                            class="h-10 w-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer p-3">
+                            class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
                     </div>
                     <div>
                         <img src="./src/images/bell.png" alt=""
-                            class="h-10 w-10 rounded-full bg-gray-200 hover:bg-gray-300 hover:cursor-pointer p-3">
+                            class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
                     </div>
                     <div>
                         <img src="./src/images/down-filled-triangular-arrow.png" alt=""
-                            class="h-10 w-10 bg-gray-200 hover:bg-gray-300 hover:cursor-pointer rounded-full p-3">
+                            class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
                     </div>
                 </div>
             </div>
@@ -108,7 +113,7 @@
     <!-- End of Navbar -->
 
     <!-- Contents -->
-    <div class="flex gap-4 pt-12 w-full xl:gap-10">
+    <div class="flex w-full gap-4 pt-12 xl:gap-10">
         <!-- TODO: Make content not scroll when when the timeline is being scrolled. -->
         <!-- Left Pane -->
         <div class="hidden xl:flex flex-col h-[37rem] shrink-0 text-sm tracking-wide overflow-y-auto scrollbar-hide" id='left-pane'>
@@ -116,72 +121,72 @@
             <aside class="m-3">
                 <div class="left">
                     <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt=""
-                        class="h-7 w-7 outline-none rounded-full object-cover">
+                        class="object-cover rounded-full outline-none h-7 w-7">
                     <span>Domeh John Kelvin Tetteh</span>
                 </div>
                 <div class="left">
-                    <img src="./src/images/friends.png" alt="" class="h-5 w-5 outline-none rounded-full">
+                    <img src="./src/images/friends.png" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>Friends</span>
                 </div>
                 <div class="left">
                     <img src="./src/images/group.png" alt=""
-                        class="h-5 w-5 outline-none">
+                        class="w-5 h-5 outline-none">
                     <span>Groups</span>
                 </div>
                 <div class="left">
-                    <img src="./src/images/shop.png" alt="" class="h-5 w-5 outline-none">
+                    <img src="./src/images/shop.png" alt="" class="w-5 h-5 outline-none">
                     <span>Marketplace</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/facebook_watch.png" alt="" class="h-5 w-5 outline-none">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/facebook_watch.png" alt="" class="w-5 h-5 outline-none">
                     <span>Watch</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/wall-clock.png" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/wall-clock.png" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>Memories</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/bookmark.png" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/bookmark.png" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>Saved</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/flag.png" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/flag.png" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>Pages</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
                     <img src="./src/images/down-filled-triangular-arrow.png" alt=""
-                        class="h-7 w-7 outline-none rounded-full bg-gray-300 p-2">
+                        class="p-2 bg-gray-300 rounded-full outline-none h-7 w-7">
                     <span>See more</span>
                 </div>
             </aside>
 
             <!-- Downside -->
-            <aside class="m-3 pt-2">
-                <header class="border-t-2 pt-4 pl-2">
+            <aside class="pt-2 m-3">
+                <header class="pt-4 pl-2 border-t-2">
                     <span class="font-bold text-gray-400">Your Shortcuts</span>
                 </header>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/pool.jpeg" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/pool.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>8 Ball Pool</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/fifa.jpeg" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/fifa.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>Fifa 22</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/cod.jpeg" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/cod.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>Call of Duty</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/pool.jpeg" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/pool.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>8 Ball Pool</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/fifa.jpeg" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/fifa.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>Fifa 22</span>
                 </div>
-                <div class="flex items-center gap-3 hover:bg-gray-200 hover:cursor-pointer rounded-md p-2">
-                    <img src="./src/images/cod.jpeg" alt="" class="h-5 w-5 outline-none rounded-full">
+                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                    <img src="./src/images/cod.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
                     <span>Call of Duty</span>
                 </div>
                
@@ -192,95 +197,95 @@
         <!-- Middle Section -->
         <div class="w-[40rem] sm:w-full flex flex-col items-center justify-center shrink " id="section">
             <section class="flex flex-col items-center pb-32 " >
-                <div class="flex pt-7 pl-10 mb-6 gap-2 items-center justify-center">
+                <div class="flex items-center justify-center gap-2 pl-10 mb-6 pt-7">
 
                     <!-- Stories -->
                     <div class="w-[25rem] lg:w-[40rem] flex items-center justify-center gap-x-3 overflow-x-auto scrollbar-hide">
                         <div class="relative text-center hover:contrast-[.8] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 cursor-pointer">
                             <div class=''>
-                                <img src="./src/images/IMG_20210815_190401_500~2.jpg"  alt="" class="rounded-md h-48 object-cover">
+                                <img src="./src/images/IMG_20210815_190401_500~2.jpg"  alt="" class="object-cover h-48 rounded-md">
                             </div>
-                            <div class=' bg-white absolute h-12 top-36 w-32 rounded-b-md'>
+                            <div class='absolute w-32 h-12 bg-white top-36 rounded-b-md'>
                                 <div class='mt-5'>
                                     <span class="text-sm">Create Story</span>
                                 </div>
                             </div>
                             <div class="absolute pl-12 top-32">
-                                <img src="./src/images/plus.png" alt="" class="h-9 w-9 border-4 border-white object-cover rounded-full bg-white">
+                                <img src="./src/images/plus.png" alt="" class="object-cover bg-white border-4 border-white rounded-full h-9 w-9">
                             </div>
                         </div>
 
                         <div class="relative text-center hover:contrast-[.8] cursor-pointer">
                             <div class='w-28'>
-                                <img src="./src/images/Story/harri1.jpg" alt="" class="rounded-md h-48 w-32 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                <img src="./src/images/Story/harri1.jpg" alt="" class="object-cover w-32 h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
                             </div>
-                            <div class='absolute h-5 top-32 w-24 rounded-b-md'>
+                            <div class='absolute w-24 h-5 top-32 rounded-b-md'>
                                 <div class='mt-5'>
                                     <span class="text-sm text-white text-semibold">Obaapa Fafali</span>
                                 </div>
                             </div>
-                            <div class="absolute p-3 top-0">
-                                <img src="./src/images/Story/harri.jpg" alt="" class="h-9 w-9 border-4 border-blue-500 rounded-full bg-white">
+                            <div class="absolute top-0 p-3">
+                                <img src="./src/images/Story/harri.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
                             </div>
                         </div>
 
                         <div class="relative text-center hover:contrast-[.8] cursor-pointer">
                             <div class='w-28'>
-                                <img src="./src/images/Story/treve1.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                <img src="./src/images/Story/treve1.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
                             </div>
-                            <div class='absolute h-5 top-32 w-24 rounded-b-md'>
+                            <div class='absolute w-24 h-5 top-32 rounded-b-md'>
                                 <div class='mt-5'>
                                     <span class="text-sm text-white text-semibold">Treve Paul</span>
                                 </div>
                             </div>
-                            <div class="absolute p-3 top-0">
-                                <img src="./src/images/Story/treve.jpg" alt="" class="h-9 w-9 border-4 border-blue-500 rounded-full bg-white">
+                            <div class="absolute top-0 p-3">
+                                <img src="./src/images/Story/treve.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
                             </div>
                         </div>
 
                         <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
                             <div class='w-28'>
-                                <img src="./src/images/Story/kendra.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                <img src="./src/images/Story/kendra.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
                             </div>
-                            <div class='absolute h-5 top-32 w-24 rounded-b-md'>
+                            <div class='absolute w-24 h-5 top-32 rounded-b-md'>
                                 <div class='mt-5'>
                                     <span class="text-sm text-white text-semibold">Tieku Kendra</span>
                                 </div>
                             </div>
-                            <div class="absolute p-3 top-0">
-                                <img src="./src/images/Story/tieku.jpg" alt="" class="h-9 w-9 border-4 rounded-full border-blue-500 bg-white">
+                            <div class="absolute top-0 p-3">
+                                <img src="./src/images/Story/tieku.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
                             </div>
                         </div>
                         
                         <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
                             <div class='w-28'>
-                                <img src="./src/images/Story/pinto1.jpg" alt="" class="rounded-md h-48 object-cover transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">
+                                <img src="./src/images/Story/pinto1.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
                             </div>
-                            <div class='absolute h-5 top-32 w-24 rounded-b-md'>
+                            <div class='absolute w-24 h-5 top-32 rounded-b-md'>
                                 <div class='mt-5'>
-                                    <span class="text-sm text-white text-semibold truncate">Pinto Aaron</span>
+                                    <span class="text-sm text-white truncate text-semibold">Pinto Aaron</span>
                                 </div>
                         
                             </div>
-                            <div class="absolute p-3 top-0">
-                                <img src="./src/images/Story/pinto.jpg" alt="" class="h-9 w-9 border-blue-500 border-4 rounded-full">
+                            <div class="absolute top-0 p-3">
+                                <img src="./src/images/Story/pinto.jpg" alt="" class="border-4 border-blue-500 rounded-full h-9 w-9">
                             </div>
                         </div>
                     </div>
                    
                     <!-- <div class="bg-red-500">
-                        <img src="../src/images/right.png" alt="" class="h-9 w-9 bg-white rounded-full">
+                        <img src="../src/images/right.png" alt="" class="bg-white rounded-full h-9 w-9">
                     </div> -->
                 </div>
 
                 <!-- What's on your mind? -->
                 <div class="maincen w-[25rem] sm:w-auto">
-                    <div class="flex space-x-3 border-b-2 pb-3">
-                        <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="rounded-full h-10 w-10 object-cover">
+                    <div class="flex pb-3 space-x-3 border-b-2">
+                        <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         
                         <input type="text" class="rounded-full w-[90%] bg-gray-100 outline-none placeholder:pl-5 placeholder:text-gray-500 hover:cursor-pointer hover:bg-gray-200" placeholder="What's on your mind, Jhohannes?" disabled="disabled">
                     </div>
-                    <div class="flex gap-5 mt-5 text-sm text-gray-500 font-bold">
+                    <div class="flex gap-5 mt-5 text-sm font-bold text-gray-500">
                         <div class="WOYM">
                             <img src="./src/images/WOYM/video-player.png" alt="" class="w-6 h-6">
                             <span class="text-sm">Live Video</span>
@@ -292,7 +297,7 @@
                         </div>
                         
                         <div class="WOYM">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-yellow-500" fill="none" viewBox="0 0 24 24"
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-500" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -305,28 +310,28 @@
 
                 <!-- Div for Create room -->
                 <!-- TODO: Make icons horizontally scrollable -->
-                <div class="maincen flex space-x-4 items-center">
-                    <div class="flex items-center space-x-2 p-2 tracking-wide border-2 border-gray-100 hover:bg-gray-200 rounded-full">
+                <div class="flex items-center space-x-4 maincen">
+                    <div class="flex items-center p-2 space-x-2 tracking-wide border-2 border-gray-100 rounded-full hover:bg-gray-200">
                         <img src="./src/images/WOYM/video-button.png" alt="" class="h-7 w-7">
-                        <p class="text-blue-500 font-semibold text-sm">Create room</p>
+                        <p class="text-sm font-semibold text-blue-500">Create room</p>
                     </div>
                     <div class="flex w-[20rem] items-center justify-center gap-4 overflow-x-auto scrollbar-hide">
-                        <img src="./src/images/Story/juder.jpg" alt="" class='hidden lg:flex h-10 w-10 rounded-full'>
-                        <img src="./src/images/createroom/billgates.jpeg" alt="" class="hidden md:block h-10 w-10 rounded-full object-cover">
-                        <img src="./src/images/createroom/mark.jpeg" alt="" class="h-10 w-10 rounded-full object-cover">
-                        <img src="./src/images/createroom/reigner.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
-                        <img src="./src/images/createroom/edem.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
-                        <img src="./src/images/createroom/isaac.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                        <img src="./src/images/Story/juder.jpg" alt="" class='hidden w-10 h-10 rounded-full lg:flex'>
+                        <img src="./src/images/createroom/billgates.jpeg" alt="" class="hidden object-cover w-10 h-10 rounded-full md:block">
+                        <img src="./src/images/createroom/mark.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
+                        <img src="./src/images/createroom/reigner.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                        <img src="./src/images/createroom/edem.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                        <img src="./src/images/createroom/isaac.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                     </div>
                 </div>
                 <!--  End of Create room's div-->
 
                 <!-- Timeline -->
                     <!-- First post :: Start -->
-                <div class="maincen  lg:maincen">
+                <div class="maincen lg:maincen">
                     <div class="flex justify-between">
                         <div class="flex space-x-2">
-                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="rounded-full w-9 h-9 object-cover">
+                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover rounded-full w-9 h-9">
                             <div class="flex flex-col">
                                 <div class="flex items-center space-x-2">
                                     <p class="font-bold hover:underline">Domeh John Kelvin Tetteh</p>
@@ -342,15 +347,15 @@
                             </div>
                         </div>
                         
-                        <div class='flex rounded-full w-10 h-10 items-center justify-center hover:bg-gray-200'>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div class='flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200'>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                             </svg>
                         </div>
                     </div>
                     <!-- Message -->
-                    <div class="text-sm pt-2 tracking-wide">
+                    <div class="pt-2 text-sm tracking-wide">
                         <p>
                             Proud to have done this with HTML and tailwindCSS.
                         </p>
@@ -358,8 +363,8 @@
                     <div class="w-full pt-3">
                         <img src="./src/images/myfeed.jpeg" alt="">
                     </div>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center pl-3 pt-2 pb-2 space-x-2 border-l-blue-600 border-l-2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
                             <div>
                                 <img src="./src/images/heart.png" alt="" class="h-6 w-7">
                             </div>
@@ -378,13 +383,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center space-x-16 pt-3 border-t-2 items-center ">
+                    <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
                         <div class="flex items-center space-x-2">
                             <img src="./src/images/like.png" alt="" class="w-3 h-5 ">
-                            <p class="capitalize text-sm">like</p>
+                            <p class="text-sm capitalize">like</p>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                             </svg>
@@ -402,10 +407,10 @@
                 <!-- TODO: Change photo and content to suite name.-->
 
                 <!-- Second post:: start -->
-                <div class="maincen  lg:maincen">
+                <div class="maincen lg:maincen">
                     <div class="flex justify-between">
                         <div class="flex space-x-2">
-                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="rounded-full w-9 h-9 object-cover">
+                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover rounded-full w-9 h-9">
                             <div class="flex flex-col">
                                 <div class="flex items-center space-x-2">
                                     <p class="font-bold hover:underline">Pinto Aaron Macquena</p>
@@ -421,15 +426,15 @@
                             </div>
                         </div>
                         
-                        <div class='flex rounded-full w-10 h-10 items-center justify-center hover:bg-gray-200'>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div class='flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200'>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                             </svg>
                         </div>
                     </div>
                     <!-- Message -->
-                    <div class="text-sm pt-2 tracking-wide">
+                    <div class="pt-2 text-sm tracking-wide">
                         <p>
                             Proud to have done this with HTML and tailwindCSS.
                         </p>
@@ -437,8 +442,8 @@
                     <div class="w-full pt-3">
                         <img src="./src/images/myfeed.jpeg" alt="">
                     </div>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center pl-3 pt-2 pb-2 space-x-2 border-l-blue-600 border-l-2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
                             <div>
                                 <img src="./src/images/heart.png" alt="" class="h-6 w-7">
                             </div>
@@ -457,13 +462,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center space-x-16 pt-3 border-t-2 items-center ">
+                    <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
                         <div class="flex items-center space-x-2">
                             <img src="./src/images/like.png" alt="" class="w-3 h-5 ">
-                            <p class="capitalize text-sm">like</p>
+                            <p class="text-sm capitalize">like</p>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                             </svg>
@@ -482,10 +487,10 @@
 
 
                 <!-- Third post:: start -->
-                <div class="maincen  lg:maincen">
+                <div class="maincen lg:maincen">
                     <div class="flex justify-between">
                      <div class="flex space-x-2">
-                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="rounded-full w-9 h-9 object-cover">
+                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover rounded-full w-9 h-9">
                             <div class="flex flex-col">
                                 <div class="flex items-center space-x-2">
                                     <p class="font-bold hover:underline">Kwaw Kumi Miezah</p>
@@ -501,15 +506,15 @@
                             </div>
                         </div>
                         
-                        <div class='flex rounded-full w-10 h-10 items-center justify-center hover:bg-gray-200'>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <div class='flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200'>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
                             </svg>
                         </div>
                     </div>
                     <!-- Message -->
-                    <div class="text-sm pt-2 tracking-wide">
+                    <div class="pt-2 text-sm tracking-wide">
                         <p>
                             Proud to have done this with HTML and tailwindCSS.
                         </p>
@@ -517,8 +522,8 @@
                     <div class="w-full pt-3">
                         <img src="./src/images/myfeed.jpeg" alt="">
                     </div>
-                    <div class="flex justify-between items-center">
-                        <div class="flex items-center pl-3 pt-2 pb-2 space-x-2 border-l-blue-600 border-l-2">
+                    <div class="flex items-center justify-between">
+                        <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
                             <div>
                                 <img src="./src/images/heart.png" alt="" class="h-6 w-7">
                             </div>
@@ -537,13 +542,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-center space-x-16 pt-3 border-t-2 items-center ">
+                    <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
                         <div class="flex items-center space-x-2">
                             <img src="./src/images/like.png" alt="" class="w-3 h-5 ">
-                            <p class="capitalize text-sm">like</p>
+                            <p class="text-sm capitalize">like</p>
                         </div>
                         <div class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
                             </svg>
@@ -567,20 +572,20 @@
         <div class="hidden md:flex flex-col md:w-[26rem] lg:w-[40rem] mr-3 pt-8 h-max overflow-y-auto scrollbar-hide">
 
             <div class="bg-white h-48 w-[100%] rounded-xl p-3">
-                <div class="flex items-center text-sm space-x-2 text-center">
-                    <img src="./src/images/friends.png" alt="" class="h-4 w-4">
-                    <div class="flex justify-between w-full items-center">
+                <div class="flex items-center space-x-2 text-sm text-center">
+                    <img src="./src/images/friends.png" alt="" class="w-4 h-4">
+                    <div class="flex items-center justify-between w-full">
                         <div><p>Friend requests</p></div>
                         <div><span class="text-xl text-center">...</span></div>
                     </div>
                 </div>
-                <div class="flex pt-3 space-x-3 relative">
-                    <img src="./src/images/elon.jpg" alt="" class="rounded-full w-10 h-10">
+                <div class="relative flex pt-3 space-x-3">
+                    <img src="./src/images/elon.jpg" alt="" class="w-10 h-10 rounded-full">
                     
-                    <div class="flex justify-between w-full items-center">
-                        <div><p class="text-sm font-bold tracking-wider flex items-start">Elon Musk</p></div>
-                        <div class="flex justify-end relative items-center">
-                            <span class="text-blue-500 flex">1hr</span>
+                    <div class="flex items-center justify-between w-full">
+                        <div><p class="flex items-start text-sm font-bold tracking-wider">Elon Musk</p></div>
+                        <div class="relative flex items-center justify-end">
+                            <span class="flex text-blue-500">1hr</span>
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 172 172"
                                 style=" fill:#000000;">
                                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
@@ -599,26 +604,26 @@
                     
                 </div>
 
-                <div class="flex flex-col pt-3 space-y-2 items-center text-center">
-                    <button class="btn bg-blue-500 hover:bg-blue-600 text-white">Confirm</button>
-                    <button class="btn bg-gray-200 hover:bg-slate-300">Delete</button>
+                <div class="flex flex-col items-center pt-3 space-y-2 text-center">
+                    <button class="text-white bg-blue-500 btn hover:bg-blue-600">Confirm</button>
+                    <button class="bg-gray-200 btn hover:bg-slate-300">Delete</button>
                 </div>
                 
             </div>
 
             <!-- Chats and Contacts -->
             <!-- REVIEW: Add some hover effect of contacts -->
-            <div class="border-t-2 mt-4 pt-4">
-                <div class="flex justify-between items-center">
+            <div class="pt-4 mt-4 border-t-2">
+                <div class="flex items-center justify-between">
                     <div>
-                        <span class="capitalize font-semibold text-gray-400">contacts</span>
+                        <span class="font-semibold text-gray-400 capitalize">contacts</span>
                     </div>
-                    <div class="flex justify-between items-center w-24">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="flex items-center justify-between w-24">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
@@ -629,40 +634,40 @@
                     </div>
                 </div>
                 <div class="flex flex-col pt-4 space-y-3">
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/createroom/billgates.jpeg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/createroom/billgates.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Bill Gates</p>
                     </div>
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/createroom/mark.jpeg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/createroom/mark.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Mark Zuckerberg</p>
                     </div>
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/Story/harri.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/Story/harri.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Obaapa Harriet Okyere</p>
                     </div>
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/Story/kendra.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/Story/kendra.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Tieku Kendra</p>
                     </div>
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/createroom/isaac.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/createroom/isaac.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Isaac Natey Domeh</p>
                     </div>
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/createroom/edem.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/createroom/edem.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Akuaku Jonathan Edem</p>
                     </div>
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/contacts/adogo.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/contacts/adogo.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Adogo James</p>
                     </div>
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/createroom/reigner.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/createroom/reigner.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Pepe Reigner</p>
                     </div>
-                    <div class="flex items-center text-sm space-x-5">
-                        <img src="./src/images/contacts/Eunice.jpg" alt="" class="h-10 w-10 rounded-full object-cover">
+                    <div class="flex items-center space-x-5 text-sm">
+                        <img src="./src/images/contacts/Eunice.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         <p>Eunice Nakie Domeh</p>
                     </div>
 
@@ -673,7 +678,7 @@
     </div>
 
 
-    <script src="js/index.js"></script>
+    <script rel="javascript" src="js/index.js"></script>
 </body>
 
 </html>

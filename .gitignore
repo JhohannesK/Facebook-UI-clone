@@ -1,3 +1,13 @@
-node_modules/
-output.css
+node_modules
+node_modules/*
+node_modules/**/*
+output
 .vscode
+.vs
+.idea
+*.iml
+*.ipr
+*.iws
+*.bak
+
+# IntelliJ
