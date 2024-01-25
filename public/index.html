@@ -10,12 +10,12 @@
 
     <!-- <link rel="stylesheet" href="./input.css"> -->
     <link rel="stylesheet" href="../output/output.css">
-    <script defer src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/0a2dd49d2c.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- BUG: Whole pages zooms in when on mobile. -->
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 ">
     <!-- Navbar -->
     <header class="">
         <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full bg-white shadow-md h-14">
@@ -26,7 +26,7 @@
                 <img class="w-10 h-10 mx-2 rounded-full hover:cursor-pointer" src="./src/images/logo.png" alt="Facebook icon">
         
                 <!-- Search and input -->
-                <div class='flex items-center pl-3 ml-2 bg-gray-100 rounded-full'>
+                <div class='flex items-center justify-center ml-2 bg-gray-100 rounded-full md:hidden lg:flex md:pl-3 w-9 h-9 lg:flex-1'>
                     <!-- Search icon -->
                     <!-- FIXME: CHANGE the size the icon -->
                     <!-- <img class="flex w-10 p-2 rounded-full item-center shrink-0 h-9 md:h-8 md:w-8 md:ml-2"
@@ -44,24 +44,35 @@
             <!-- End of Left div -->
         
             <!-- Middle div -->
-            <div class="hidden items-center md:flex justify-center  lg:w-[24rem]  shrink-0 space-x-1 md:space-x-5 h-full ">
+            <div class="hidden items-center md:flex justify-center w-[20rem] lg:w-[42rem] pr-10 lg:pr-24 shrink-0 space-x-1 lg:gap-16 h-full ">
                 <!-- Div for home button -->
-                <div class="flex items-center justify-center w-32 border-b-2 active:fill-blue-500 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
-                    <a href="#" class="focus:underline">
-                        <img class="flex w-8 h-12 shrink-0 focus:border-black" src="./src/images/home_black_24dp.svg" alt="">
+                <div class="flex items-center justify-center w-10 lg:w-32 h-full border-b-2 border-b-[#0866ff] active:fill-blue-500 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
+                    <a href="#" class="flex items-center justify-center">
+                        <i class="fa-solid fa-house fa-lg" style="color: #0866ff;"></i>
                     </a>
                 </div>
                 <!-- div for groups button -->
-                <div class="flex items-center justify-center w-32 h-full pt-2 pb-3 hover:bg-gray-100 hover:rounded-lg">
-                    <a href="#" class="focus:underline">
-                        <img class="w-8 h-8 bg-white border rounded-full " src="./src/images/groups_black_24dp.svg" alt="">
+                <div class="flex items-center justify-center w-10 pt-2 pb-3 lg:w-32h-full hover:bg-gray-100 hover:rounded-lg">
+                    <a href="#" class="flex items-center justify-center">
+                       <i class="fa-solid fa-tv fa-lg" style="color: #8d8f92;"></i>
+                    </a>
+                </div>
+                <!-- div for marketplace -->
+                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                    <a href="#" class="flex items-center justify-center">
+                       <i class="fa-solid fa-store fa-lg" style="color: #8d8f92;"></i>
                     </a>
                 </div>
                 <!-- div for add friend button -->
-                <div class="flex items-center justify-center w-32 hover:bg-gray-100 hover:rounded-lg">
-                    <a href="#" class="focus:underline">
-                        <img class="w-8 h-12 focus:border-black" src="./src/images/people_black_24dp.svg" alt="">
+                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                    <a href="#" class="flex items-center justify-center">
+                       <i class="fa-solid fa-users-rectangle fa-lg" style="color: #8d8f92;"></i>
                     </a>
+                </div>
+                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                     <a href="#" class="flex items-center justify-center">
+                         <i class="fa-solid fa-gamepad fa-lg" style="color: #8d8f92;"></i>
+                     </a>
                 </div>
             </div>
             <!-- End of middle div -->
@@ -113,80 +124,80 @@
     <!-- End of Navbar -->
 
     <!-- Contents -->
-    <div class="flex w-full gap-4 pt-12 xl:gap-10">
+    <div class="flex w-full gap-4 pt-12 xl:gap-10 max-w-[1920px] mx-auto">
         <!-- TODO: Make content not scroll when when the timeline is being scrolled. -->
         <!-- Left Pane -->
-        <div class="hidden xl:flex flex-col h-[37rem] shrink-0 text-sm tracking-wide overflow-y-auto scrollbar-hide" id='left-pane'>
+        <div class="flex-col hidden overflow-y-auto font-medium tracking-wide xl:flex shrink-0 text-md scrollbar-hide" id='left-pane'>
             <!-- Upside -->
             <aside class="m-3">
                 <div class="left">
                     <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt=""
-                        class="object-cover rounded-full outline-none h-7 w-7">
+                        class="object-cover w-10 h-10 rounded-full outline-none">
                     <span>Domeh John Kelvin Tetteh</span>
                 </div>
                 <div class="left">
-                    <img src="./src/images/friends.png" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/friends.png" alt="" class="rounded-full outline-none w-9 h-9">
                     <span>Friends</span>
                 </div>
                 <div class="left">
                     <img src="./src/images/group.png" alt=""
-                        class="w-5 h-5 outline-none">
+                        class="outline-none w-9 h-9">
                     <span>Groups</span>
                 </div>
                 <div class="left">
-                    <img src="./src/images/shop.png" alt="" class="w-5 h-5 outline-none">
+                    <img src="./src/images/shop.png" alt="" class="outline-none w-9 h-9">
                     <span>Marketplace</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/facebook_watch.png" alt="" class="w-5 h-5 outline-none">
+                    <img src="./src/images/facebook_watch.png" alt="" class="outline-none w-9 h-9">
                     <span>Watch</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/wall-clock.png" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/wall-clock.png" alt="" class="rounded-full outline-none w-9 h-9">
                     <span>Memories</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/bookmark.png" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/bookmark.png" alt="" class="rounded-full outline-none w-9 h-9">
                     <span>Saved</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/flag.png" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/flag.png" alt="" class="rounded-full outline-none w-9 h-9">
                     <span>Pages</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
                     <img src="./src/images/down-filled-triangular-arrow.png" alt=""
-                        class="p-2 bg-gray-300 rounded-full outline-none h-7 w-7">
+                        class="w-8 h-8 p-2 bg-gray-300 rounded-full outline-none">
                     <span>See more</span>
                 </div>
             </aside>
 
             <!-- Downside -->
-            <aside class="pt-2 m-3">
+            <aside class="h-full pt-2">
                 <header class="pt-4 pl-2 border-t-2">
                     <span class="font-bold text-gray-400">Your Shortcuts</span>
                 </header>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/pool.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/pool.jpeg" alt="" class="object-contain rounded-full outline-none w-9 h-9">
                     <span>8 Ball Pool</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/fifa.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/fifa.jpeg" alt="" class="object-contain rounded-full outline-none w-9 h-9">
                     <span>Fifa 22</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/cod.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/cod.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
                     <span>Call of Duty</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/pool.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/pool.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
                     <span>8 Ball Pool</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/fifa.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/fifa.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
                     <span>Fifa 22</span>
                 </div>
                 <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/cod.jpeg" alt="" class="w-5 h-5 rounded-full outline-none">
+                    <img src="./src/images/cod.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
                     <span>Call of Duty</span>
                 </div>
                
@@ -197,7 +208,7 @@
         <!-- Middle Section -->
         <div class="w-[40rem] sm:w-full flex flex-col items-center justify-center shrink " id="section">
             <section class="flex flex-col items-center pb-32 " >
-                <div class="flex items-center justify-center gap-2 pl-10 mb-6 pt-7">
+                <div class="flex items-center justify-center gap-2 mb-6 pt-7">
 
                     <!-- Stories -->
                     <div class="w-[25rem] lg:w-[40rem] flex items-center justify-center gap-x-3 overflow-x-auto scrollbar-hide">
@@ -279,13 +290,13 @@
                 </div>
 
                 <!-- What's on your mind? -->
-                <div class="maincen w-[25rem] sm:w-auto">
+                <div class="maincen">
                     <div class="flex pb-3 space-x-3 border-b-2">
                         <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
                         
                         <input type="text" class="rounded-full w-[90%] bg-gray-100 outline-none placeholder:pl-5 placeholder:text-gray-500 hover:cursor-pointer hover:bg-gray-200" placeholder="What's on your mind, Jhohannes?" disabled="disabled">
                     </div>
-                    <div class="flex gap-5 mt-5 text-sm font-bold text-gray-500">
+                    <div class="flex justify-between gap-5 px-10 mt-5 text-sm font-bold text-gray-500">
                         <div class="WOYM">
                             <img src="./src/images/WOYM/video-player.png" alt="" class="w-6 h-6">
                             <span class="text-sm">Live Video</span>
@@ -361,12 +372,12 @@
                         </p>
                     </div>
                     <div class="w-full pt-3">
-                        <img src="./src/images/myfeed.jpeg" alt="">
+                        <img src="./src/images/myfeed.jpeg" alt="" class="object-contain w-full">
                     </div>
                     <div class="flex items-center justify-between">
                         <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
                             <div>
-                                <img src="./src/images/heart.png" alt="" class="h-6 w-7">
+                                <img src="./src/images/heart.png" alt="" class="h-7 w-7">
                             </div>
                         
                             <div>
@@ -385,7 +396,7 @@
                     </div>
                     <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
                         <div class="flex items-center space-x-2">
-                            <img src="./src/images/like.png" alt="" class="w-3 h-5 ">
+                            <i class="fa-regular fa-thumbs-up fa-lg"></i>
                             <p class="text-sm capitalize">like</p>
                         </div>
                         <div class="flex items-center space-x-2">
@@ -440,12 +451,12 @@
                         </p>
                     </div>
                     <div class="w-full pt-3">
-                        <img src="./src/images/myfeed.jpeg" alt="">
+                        <img src="./src/images/myfeed.jpeg" alt=""  class="object-contain w-full">
                     </div>
                     <div class="flex items-center justify-between">
                         <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
                             <div>
-                                <img src="./src/images/heart.png" alt="" class="h-6 w-7">
+                                <img src="./src/images/heart.png" alt="" class="h-7 w-7">
                             </div>
                         
                             <div>
@@ -464,7 +475,7 @@
                     </div>
                     <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
                         <div class="flex items-center space-x-2">
-                            <img src="./src/images/like.png" alt="" class="w-3 h-5 ">
+                            <i class="fa-regular fa-thumbs-up fa-lg"></i>
                             <p class="text-sm capitalize">like</p>
                         </div>
                         <div class="flex items-center space-x-2">
@@ -520,12 +531,12 @@
                         </p>
                     </div>
                     <div class="w-full pt-3">
-                        <img src="./src/images/myfeed.jpeg" alt="">
+                        <img src="./src/images/myfeed.jpeg" alt="" class="object-contain w-full">
                     </div>
                     <div class="flex items-center justify-between">
                         <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
                             <div>
-                                <img src="./src/images/heart.png" alt="" class="h-6 w-7">
+                                <img src="./src/images/heart.png" alt="" class="h-7 w-7">
                             </div>
                         
                             <div>
@@ -544,7 +555,7 @@
                     </div>
                     <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
                         <div class="flex items-center space-x-2">
-                            <img src="./src/images/like.png" alt="" class="w-3 h-5 ">
+                            <i class="fa-regular fa-thumbs-up fa-lg"></i>
                             <p class="text-sm capitalize">like</p>
                         </div>
                         <div class="flex items-center space-x-2">
@@ -570,23 +581,23 @@
         <!-- Right Section -->
         <!-- FIXME: Make this section fixed and not scroll when middle section is being scrolled. -->
         <div class="hidden md:flex flex-col md:w-[26rem] lg:w-[40rem] mr-3 pt-8 h-max overflow-y-auto scrollbar-hide">
-
-            <div class="bg-white h-48 w-[100%] rounded-xl p-3">
-                <div class="flex items-center space-x-2 text-sm text-center">
+            <!-- Friend request card -->
+            <div class=" w-[100%] rounded-xl p-3">
+                <div class="flex items-center space-x-2 text-center">
                     <img src="./src/images/friends.png" alt="" class="w-4 h-4">
                     <div class="flex items-center justify-between w-full">
-                        <div><p>Friend requests</p></div>
-                        <div><span class="text-xl text-center">...</span></div>
+                        <p class="text-lg font-medium text-gray-500">Friend requests</p>
+                        <div><span class="text-center text-blue-600 text-md">See all</span></div>
                     </div>
                 </div>
                 <div class="relative flex pt-3 space-x-3">
                     <img src="./src/images/elon.jpg" alt="" class="w-10 h-10 rounded-full">
                     
                     <div class="flex items-center justify-between w-full">
-                        <div><p class="flex items-start text-sm font-bold tracking-wider">Elon Musk</p></div>
-                        <div class="relative flex items-center justify-end">
-                            <span class="flex text-blue-500">1hr</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 172 172"
+                        <div><p class="flex items-start font-bold tracking-wider text-md">Elon Musk</p><p class="text-sm text-gray-400">3 mutual friends</p></div>
+                        <div class="relative flex items-center justify-end gap-2">
+                            <span class="flex text-sm text-blue-500">1hr</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="10" viewBox="0 0 172 172"
                                 style=" fill:#000000;">
                                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
                                     stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
@@ -604,9 +615,9 @@
                     
                 </div>
 
-                <div class="flex flex-col items-center pt-3 space-y-2 text-center">
-                    <button class="text-white bg-blue-500 btn hover:bg-blue-600">Confirm</button>
-                    <button class="bg-gray-200 btn hover:bg-slate-300">Delete</button>
+                <div class="flex items-center justify-end gap-2 pt-3 text-center">
+                    <button class="w-32 text-white bg-blue-600 btn hover:bg-blue-500">Confirm</button>
+                    <button class="w-32 bg-gray-200 btn hover:bg-slate-300">Delete</button>
                 </div>
                 
             </div>
@@ -616,7 +627,7 @@
             <div class="pt-4 mt-4 border-t-2">
                 <div class="flex items-center justify-between">
                     <div>
-                        <span class="font-semibold text-gray-400 capitalize">contacts</span>
+                        <span class="text-lg font-semibold text-gray-400 capitalize">contacts</span>
                     </div>
                     <div class="flex items-center justify-between w-24">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
