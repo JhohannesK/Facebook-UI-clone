@@ -8,6 +8,7 @@
 	}
 	.WOYM {
 		@apply flex items-center p-2 space-x-2 rounded-xl hover:bg-gray-100;
+		@apply flex items-center p-2 space-x-2 rounded-xl hover:bg-gray-100;
 	}
 	.btn {
 		@apply rounded-xl font-semibold w-[60%] h-9;

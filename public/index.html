@@ -11,10 +11,12 @@
     <!-- <link rel="stylesheet" href="./input.css"> -->
     <link rel="stylesheet" href="../output/output.css">
     <script src="https://kit.fontawesome.com/0a2dd49d2c.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0a2dd49d2c.js" crossorigin="anonymous"></script>
 </head>
 
 <!-- BUG: Whole pages zooms in when on mobile. -->
 
+<body class="bg-gray-100 ">
 <body class="bg-gray-100 ">
     <!-- Navbar -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
@@ -26,6 +28,7 @@
                 <img class="w-10 h-10 mx-2 rounded-full hover:cursor-pointer" src="./src/images/logo.png" alt="Facebook icon">
         
                 <!-- Search and input -->
+                <div class='flex items-center justify-center ml-2 bg-gray-100 rounded-full md:hidden lg:flex md:pl-3 w-9 h-9 lg:flex-1'>
                 <div class='flex items-center justify-center ml-2 bg-gray-100 rounded-full md:hidden lg:flex md:pl-3 w-9 h-9 lg:flex-1'>
                     <!-- Search icon -->
                     <!-- FIXME: CHANGE the size the icon -->
@@ -44,6 +47,7 @@
             <!-- End of Left div -->
         
             <!-- Middle div -->
+            <div class="hidden items-center md:flex justify-center w-[20rem] lg:w-[42rem] pr-10 lg:pr-24 shrink-0 space-x-1 lg:gap-16 h-full ">
             <div class="hidden items-center md:flex justify-center w-[20rem] lg:w-[42rem] pr-10 lg:pr-24 shrink-0 space-x-1 lg:gap-16 h-full ">
                 <!-- Div for home button -->
                 <div class="group relative flex items-center justify-center w-10 lg:w-32 h-full border-b-2 border-b-[#0866ff] active:fill-blue-500 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
