@@ -18,9 +18,8 @@
 
 <body class="bg-gray-100 ">
 <body class="bg-gray-100 ">
-    <!-- Navbar -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
-        <nav class="flex items-center justify-between w-full h-14 max-w-[1900px] mx-auto">
+    <header class="">
+        <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full bg-white shadow-md h-14">
         
             <!-- Left div -->
             <div class='flex items-center w-[120px] md:w-[300px]'>
@@ -28,7 +27,6 @@
                 <img class="w-10 h-10 mx-2 rounded-full hover:cursor-pointer" src="./src/images/logo.png" alt="Facebook icon">
         
                 <!-- Search and input -->
-                <div class='flex items-center justify-center ml-2 bg-gray-100 rounded-full md:hidden lg:flex md:pl-3 w-9 h-9 lg:flex-1'>
                 <div class='flex items-center justify-center ml-2 bg-gray-100 rounded-full md:hidden lg:flex md:pl-3 w-9 h-9 lg:flex-1'>
                     <!-- Search icon -->
                     <!-- FIXME: CHANGE the size the icon -->
@@ -48,40 +46,34 @@
         
             <!-- Middle div -->
             <div class="hidden items-center md:flex justify-center w-[20rem] lg:w-[42rem] pr-10 lg:pr-24 shrink-0 space-x-1 lg:gap-16 h-full ">
-            <div class="hidden items-center md:flex justify-center w-[20rem] lg:w-[42rem] pr-10 lg:pr-24 shrink-0 space-x-1 lg:gap-16 h-full ">
                 <!-- Div for home button -->
-                <div class="group relative flex items-center justify-center w-10 lg:w-32 h-full border-b-2 border-b-[#0866ff] active:fill-blue-500 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
+                <div class="flex items-center justify-center w-10 lg:w-32 h-full border-b-2 border-b-[#0866ff] active:fill-blue-500 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="flex items-center justify-center">
                         <i class="fa-solid fa-house fa-lg" style="color: #0866ff;"></i>
                     </a>
-                    <span class="tooltip">Home</span>
                 </div>
-                <!-- div for video button -->
-                <div class="relative flex items-center justify-center w-10 h-full pt-2 pb-3 group lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                <!-- div for groups button -->
+                <div class="flex items-center justify-center w-10 pt-2 pb-3 lg:w-32h-full hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="flex items-center justify-center">
                        <i class="fa-solid fa-tv fa-lg" style="color: #8d8f92;"></i>
                     </a>
-                     <span class="tooltip">Videos</span>
                 </div>
                 <!-- div for marketplace -->
-                <div class="relative flex items-center justify-center w-10 h-full pt-2 pb-3 group lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="flex items-center justify-center">
                        <i class="fa-solid fa-store fa-lg" style="color: #8d8f92;"></i>
                     </a>
-                     <span class="tooltip">Marketplace</span>
                 </div>
                 <!-- div for add friend button -->
-                <div class="relative flex items-center justify-center w-10 h-full pt-2 pb-3 group lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="flex items-center justify-center">
                        <i class="fa-solid fa-users-rectangle fa-lg" style="color: #8d8f92;"></i>
                     </a>
-                     <span class="tooltip">Group</span>
                 </div>
-                <div class="relative flex items-center justify-center w-10 h-full pt-2 pb-3 group lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
                      <a href="#" class="flex items-center justify-center">
                          <i class="fa-solid fa-gamepad fa-lg" style="color: #8d8f92;"></i>
                      </a>
-                      <span class="tooltip">Games</span>
                 </div>
             </div>
             <!-- End of middle div -->
@@ -97,7 +89,7 @@
                 <!-- Right div -->
                 <div class="flex gap-3 m-3 border-none items-center md:w-[20rem]">
                     <div
-                        class="relative items-center hidden p-1 space-x-2 rounded-full outline-none group hover:bg-gray-200 md:flex hover:cursor-pointer">
+                        class="items-center hidden p-1 space-x-2 rounded-full outline-none hover:bg-gray-200 md:flex hover:cursor-pointer">
                         <!-- User profile and name -->
                         <div>
                             <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt=""
@@ -106,28 +98,24 @@
                         <div class="rounded-full">
                             <span>Jhohannes </span>
                         </div>
-                        <span class="tooltip">Profile</span>
+        
                     </div>
-                    <div class="relative group">
+                    <div>
                         <!-- Icons:: should contain divs also -->
                         <img src="./src/images/apps.png" alt=""
-                            class="hidden w-10 h-10 p-3 bg-gray-200 rounded-full md:flex hover:bg-gray-300 hover:cursor-pointer"/>
-                            <span class="tooltip">Menu</span>
+                            class="hidden w-10 h-10 p-3 bg-gray-200 rounded-full md:flex hover:bg-gray-300 hover:cursor-pointer">
                     </div>
-                    <div class="relative group">
+                    <div>
                         <img src="./src/images/messenger.png" alt=""
                             class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
-                             <span class="tooltip">Messenger</span>
                     </div>
-                    <div class="relative group">
+                    <div>
                         <img src="./src/images/bell.png" alt=""
                             class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
-                             <span class="tooltip">Notifications</span>
                     </div>
-                    <div class="relative group">
+                    <div>
                         <img src="./src/images/down-filled-triangular-arrow.png" alt=""
                             class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
-                             <span class="tooltip">More</span>
                     </div>
                 </div>
             </div>
@@ -141,7 +129,7 @@
         <div class="flex w-full gap-4 pt-12 xl:gap-10 max-w-[1920px] mx-auto">
             <!-- TODO: Make content not scroll when when the timeline is being scrolled. -->
             <!-- Left Pane -->
-            <div class=" sm:w-[30%] flex-col overflow-y-auto font-medium tracking-wide -left-[20rem] md:left-0 md:flex shrink-0 text-md scrollbar-hide" id='left-pane'>
+            <div class="hidden md:block sm:w-[20%] flex-col overflow-y-auto font-medium tracking-wide -left-[20rem] md:left-0  shrink-0 text-md scrollbar-hide" id='left-pane'>
                 <!-- Upside -->
                 <aside class="m-3">
                     <div class="left">
