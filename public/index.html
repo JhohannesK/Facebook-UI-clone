@@ -17,8 +17,8 @@
 
 <body class="bg-gray-100 ">
     <!-- Navbar -->
-    <header class="">
-        <nav class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between w-full bg-white shadow-md h-14">
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+        <nav class="flex items-center justify-between w-full h-14 max-w-[1900px] mx-auto">
         
             <!-- Left div -->
             <div class='flex items-center w-[120px] md:w-[300px]'>
@@ -46,33 +46,38 @@
             <!-- Middle div -->
             <div class="hidden items-center md:flex justify-center w-[20rem] lg:w-[42rem] pr-10 lg:pr-24 shrink-0 space-x-1 lg:gap-16 h-full ">
                 <!-- Div for home button -->
-                <div class="flex items-center justify-center w-10 lg:w-32 h-full border-b-2 border-b-[#0866ff] active:fill-blue-500 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
+                <div class="group relative flex items-center justify-center w-10 lg:w-32 h-full border-b-2 border-b-[#0866ff] active:fill-blue-500 active:border-blue-400 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="flex items-center justify-center">
                         <i class="fa-solid fa-house fa-lg" style="color: #0866ff;"></i>
                     </a>
+                    <span class="tooltip">Home</span>
                 </div>
-                <!-- div for groups button -->
-                <div class="flex items-center justify-center w-10 pt-2 pb-3 lg:w-32h-full hover:bg-gray-100 hover:rounded-lg">
+                <!-- div for video button -->
+                <div class="relative flex items-center justify-center w-10 h-full pt-2 pb-3 group lg:w-32 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="flex items-center justify-center">
                        <i class="fa-solid fa-tv fa-lg" style="color: #8d8f92;"></i>
                     </a>
+                     <span class="tooltip">Videos</span>
                 </div>
                 <!-- div for marketplace -->
-                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                <div class="relative flex items-center justify-center w-10 h-full pt-2 pb-3 group lg:w-32 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="flex items-center justify-center">
                        <i class="fa-solid fa-store fa-lg" style="color: #8d8f92;"></i>
                     </a>
+                     <span class="tooltip">Marketplace</span>
                 </div>
                 <!-- div for add friend button -->
-                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                <div class="relative flex items-center justify-center w-10 h-full pt-2 pb-3 group lg:w-32 hover:bg-gray-100 hover:rounded-lg">
                     <a href="#" class="flex items-center justify-center">
                        <i class="fa-solid fa-users-rectangle fa-lg" style="color: #8d8f92;"></i>
                     </a>
+                     <span class="tooltip">Group</span>
                 </div>
-                <div class="flex items-center justify-center w-10 h-full pt-2 pb-3 lg:w-32 hover:bg-gray-100 hover:rounded-lg">
+                <div class="relative flex items-center justify-center w-10 h-full pt-2 pb-3 group lg:w-32 hover:bg-gray-100 hover:rounded-lg">
                      <a href="#" class="flex items-center justify-center">
                          <i class="fa-solid fa-gamepad fa-lg" style="color: #8d8f92;"></i>
                      </a>
+                      <span class="tooltip">Games</span>
                 </div>
             </div>
             <!-- End of middle div -->
@@ -88,7 +93,7 @@
                 <!-- Right div -->
                 <div class="flex gap-3 m-3 border-none items-center md:w-[20rem]">
                     <div
-                        class="items-center hidden p-1 space-x-2 rounded-full outline-none hover:bg-gray-200 md:flex hover:cursor-pointer">
+                        class="relative items-center hidden p-1 space-x-2 rounded-full outline-none group hover:bg-gray-200 md:flex hover:cursor-pointer">
                         <!-- User profile and name -->
                         <div>
                             <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt=""
@@ -97,24 +102,28 @@
                         <div class="rounded-full">
                             <span>Jhohannes </span>
                         </div>
-        
+                        <span class="tooltip">Profile</span>
                     </div>
-                    <div>
+                    <div class="relative group">
                         <!-- Icons:: should contain divs also -->
                         <img src="./src/images/apps.png" alt=""
-                            class="hidden w-10 h-10 p-3 bg-gray-200 rounded-full md:flex hover:bg-gray-300 hover:cursor-pointer">
+                            class="hidden w-10 h-10 p-3 bg-gray-200 rounded-full md:flex hover:bg-gray-300 hover:cursor-pointer"/>
+                            <span class="tooltip">Menu</span>
                     </div>
-                    <div>
+                    <div class="relative group">
                         <img src="./src/images/messenger.png" alt=""
                             class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
+                             <span class="tooltip">Messenger</span>
                     </div>
-                    <div>
+                    <div class="relative group">
                         <img src="./src/images/bell.png" alt=""
                             class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
+                             <span class="tooltip">Notifications</span>
                     </div>
-                    <div>
+                    <div class="relative group">
                         <img src="./src/images/down-filled-triangular-arrow.png" alt=""
                             class="w-10 h-10 p-3 bg-gray-200 rounded-full hover:bg-gray-300 hover:cursor-pointer">
+                             <span class="tooltip">More</span>
                     </div>
                 </div>
             </div>
@@ -124,572 +133,418 @@
     <!-- End of Navbar -->
 
     <!-- Contents -->
-    <div class="flex w-full gap-4 pt-12 xl:gap-10 max-w-[1920px] mx-auto">
-        <!-- TODO: Make content not scroll when when the timeline is being scrolled. -->
-        <!-- Left Pane -->
-        <div class="flex-col hidden overflow-y-auto font-medium tracking-wide xl:flex shrink-0 text-md scrollbar-hide" id='left-pane'>
-            <!-- Upside -->
-            <aside class="m-3">
-                <div class="left">
-                    <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt=""
-                        class="object-cover w-10 h-10 rounded-full outline-none">
-                    <span>Domeh John Kelvin Tetteh</span>
-                </div>
-                <div class="left">
-                    <img src="./src/images/friends.png" alt="" class="rounded-full outline-none w-9 h-9">
-                    <span>Friends</span>
-                </div>
-                <div class="left">
-                    <img src="./src/images/group.png" alt=""
-                        class="outline-none w-9 h-9">
-                    <span>Groups</span>
-                </div>
-                <div class="left">
-                    <img src="./src/images/shop.png" alt="" class="outline-none w-9 h-9">
-                    <span>Marketplace</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/facebook_watch.png" alt="" class="outline-none w-9 h-9">
-                    <span>Watch</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/wall-clock.png" alt="" class="rounded-full outline-none w-9 h-9">
-                    <span>Memories</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/bookmark.png" alt="" class="rounded-full outline-none w-9 h-9">
-                    <span>Saved</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/flag.png" alt="" class="rounded-full outline-none w-9 h-9">
-                    <span>Pages</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/down-filled-triangular-arrow.png" alt=""
-                        class="w-8 h-8 p-2 bg-gray-300 rounded-full outline-none">
-                    <span>See more</span>
-                </div>
-            </aside>
+    <div class="flex w-full">
+        <div class="flex w-full gap-4 pt-12 xl:gap-10 max-w-[1920px] mx-auto">
+            <!-- TODO: Make content not scroll when when the timeline is being scrolled. -->
+            <!-- Left Pane -->
+            <div class=" sm:w-[30%] flex-col overflow-y-auto font-medium tracking-wide -left-[20rem] md:left-0 md:flex shrink-0 text-md scrollbar-hide" id='left-pane'>
+                <!-- Upside -->
+                <aside class="m-3">
+                    <div class="left">
+                        <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt=""
+                            class="object-cover w-10 h-10 rounded-full outline-none">
+                        <span>Domeh John Kelvin Tetteh</span>
+                    </div>
+                    <div class="left">
+                        <img src="./src/images/friends.png" alt="" class="rounded-full outline-none w-9 h-9">
+                        <span>Friends</span>
+                    </div>
+                    <div class="left">
+                        <img src="./src/images/group.png" alt=""
+                            class="outline-none w-9 h-9">
+                        <span>Groups</span>
+                    </div>
+                    <div class="left">
+                        <img src="./src/images/shop.png" alt="" class="outline-none w-9 h-9">
+                        <span>Marketplace</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/facebook_watch.png" alt="" class="outline-none w-9 h-9">
+                        <span>Watch</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/wall-clock.png" alt="" class="rounded-full outline-none w-9 h-9">
+                        <span>Memories</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/bookmark.png" alt="" class="rounded-full outline-none w-9 h-9">
+                        <span>Saved</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/flag.png" alt="" class="rounded-full outline-none w-9 h-9">
+                        <span>Pages</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/down-filled-triangular-arrow.png" alt=""
+                            class="w-8 h-8 p-2 bg-gray-300 rounded-full outline-none">
+                        <span>See more</span>
+                    </div>
+                </aside>
 
-            <!-- Downside -->
-            <aside class="h-full pt-2">
-                <header class="pt-4 pl-2 border-t-2">
-                    <span class="font-bold text-gray-400">Your Shortcuts</span>
-                </header>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/pool.jpeg" alt="" class="object-contain rounded-full outline-none w-9 h-9">
-                    <span>8 Ball Pool</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/fifa.jpeg" alt="" class="object-contain rounded-full outline-none w-9 h-9">
-                    <span>Fifa 22</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/cod.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
-                    <span>Call of Duty</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/pool.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
-                    <span>8 Ball Pool</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/fifa.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
-                    <span>Fifa 22</span>
-                </div>
-                <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
-                    <img src="./src/images/cod.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
-                    <span>Call of Duty</span>
-                </div>
-               
-            </aside>
-        </div>
-
-
-        <!-- Middle Section -->
-        <div class="w-[40rem] sm:w-full flex flex-col items-center justify-center shrink " id="section">
-            <section class="flex flex-col items-center pb-32 " >
-                <div class="flex items-center justify-center gap-2 mb-6 pt-7">
-
-                    <!-- Stories -->
-                    <div class="w-[25rem] lg:w-[40rem] flex items-center justify-center gap-x-3 overflow-x-auto scrollbar-hide">
-                        <div class="relative text-center hover:contrast-[.8] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 cursor-pointer">
-                            <div class=''>
-                                <img src="./src/images/IMG_20210815_190401_500~2.jpg"  alt="" class="object-cover h-48 rounded-md">
-                            </div>
-                            <div class='absolute w-32 h-12 bg-white top-36 rounded-b-md'>
-                                <div class='mt-5'>
-                                    <span class="text-sm">Create Story</span>
-                                </div>
-                            </div>
-                            <div class="absolute pl-12 top-32">
-                                <img src="./src/images/plus.png" alt="" class="object-cover bg-white border-4 border-white rounded-full h-9 w-9">
-                            </div>
-                        </div>
-
-                        <div class="relative text-center hover:contrast-[.8] cursor-pointer">
-                            <div class='w-28'>
-                                <img src="./src/images/Story/harri1.jpg" alt="" class="object-cover w-32 h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
-                            </div>
-                            <div class='absolute w-24 h-5 top-32 rounded-b-md'>
-                                <div class='mt-5'>
-                                    <span class="text-sm text-white text-semibold">Obaapa Fafali</span>
-                                </div>
-                            </div>
-                            <div class="absolute top-0 p-3">
-                                <img src="./src/images/Story/harri.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
-                            </div>
-                        </div>
-
-                        <div class="relative text-center hover:contrast-[.8] cursor-pointer">
-                            <div class='w-28'>
-                                <img src="./src/images/Story/treve1.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
-                            </div>
-                            <div class='absolute w-24 h-5 top-32 rounded-b-md'>
-                                <div class='mt-5'>
-                                    <span class="text-sm text-white text-semibold">Treve Paul</span>
-                                </div>
-                            </div>
-                            <div class="absolute top-0 p-3">
-                                <img src="./src/images/Story/treve.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
-                            </div>
-                        </div>
-
-                        <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
-                            <div class='w-28'>
-                                <img src="./src/images/Story/kendra.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
-                            </div>
-                            <div class='absolute w-24 h-5 top-32 rounded-b-md'>
-                                <div class='mt-5'>
-                                    <span class="text-sm text-white text-semibold">Tieku Kendra</span>
-                                </div>
-                            </div>
-                            <div class="absolute top-0 p-3">
-                                <img src="./src/images/Story/tieku.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
-                            </div>
-                        </div>
-                        
-                        <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
-                            <div class='w-28'>
-                                <img src="./src/images/Story/pinto1.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
-                            </div>
-                            <div class='absolute w-24 h-5 top-32 rounded-b-md'>
-                                <div class='mt-5'>
-                                    <span class="text-sm text-white truncate text-semibold">Pinto Aaron</span>
-                                </div>
-                        
-                            </div>
-                            <div class="absolute top-0 p-3">
-                                <img src="./src/images/Story/pinto.jpg" alt="" class="border-4 border-blue-500 rounded-full h-9 w-9">
-                            </div>
-                        </div>
+                <!-- Downside -->
+                <aside class="h-full pt-2">
+                    <header class="pt-4 pl-2 border-t-2">
+                        <span class="font-bold text-gray-400">Your Shortcuts</span>
+                    </header>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/pool.jpeg" alt="" class="object-contain rounded-full outline-none w-9 h-9">
+                        <span>8 Ball Pool</span>
                     </div>
-                   
-                    <!-- <div class="bg-red-500">
-                        <img src="../src/images/right.png" alt="" class="bg-white rounded-full h-9 w-9">
-                    </div> -->
-                </div>
-
-                <!-- What's on your mind? -->
-                <div class="maincen">
-                    <div class="flex pb-3 space-x-3 border-b-2">
-                        <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        
-                        <input type="text" class="rounded-full w-[90%] bg-gray-100 outline-none placeholder:pl-5 placeholder:text-gray-500 hover:cursor-pointer hover:bg-gray-200" placeholder="What's on your mind, Jhohannes?" disabled="disabled">
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/fifa.jpeg" alt="" class="object-contain rounded-full outline-none w-9 h-9">
+                        <span>Fifa 22</span>
                     </div>
-                    <div class="flex justify-between gap-5 px-10 mt-5 text-sm font-bold text-gray-500">
-                        <div class="WOYM">
-                            <img src="./src/images/WOYM/video-player.png" alt="" class="w-6 h-6">
-                            <span class="text-sm">Live Video</span>
-                        </div>
-                        
-                        <div class="WOYM">
-                            <img src="./src/images/WOYM/gallery.png" alt="" class="w-6 h-6">
-                        <span class="text-sm">Photos/Videos</span>
-                        </div>
-                        
-                        <div class="WOYM">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-500" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
-                            <span class="text-sm">Feeling/Activity</span>
-                        </div>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/cod.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
+                        <span>Call of Duty</span>
                     </div>
-                </div>
-                <!-- End of What's on your mind! -->
-
-                <!-- Div for Create room -->
-                <!-- TODO: Make icons horizontally scrollable -->
-                <div class="flex items-center space-x-4 maincen">
-                    <div class="flex items-center p-2 space-x-2 tracking-wide border-2 border-gray-100 rounded-full hover:bg-gray-200">
-                        <img src="./src/images/WOYM/video-button.png" alt="" class="h-7 w-7">
-                        <p class="text-sm font-semibold text-blue-500">Create room</p>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/pool.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
+                        <span>8 Ball Pool</span>
                     </div>
-                    <div class="flex w-[20rem] items-center justify-center gap-4 overflow-x-auto scrollbar-hide">
-                        <img src="./src/images/Story/juder.jpg" alt="" class='hidden w-10 h-10 rounded-full lg:flex'>
-                        <img src="./src/images/createroom/billgates.jpeg" alt="" class="hidden object-cover w-10 h-10 rounded-full md:block">
-                        <img src="./src/images/createroom/mark.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <img src="./src/images/createroom/reigner.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <img src="./src/images/createroom/edem.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <img src="./src/images/createroom/isaac.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/fifa.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
+                        <span>Fifa 22</span>
                     </div>
-                </div>
-                <!--  End of Create room's div-->
-
-                <!-- Timeline -->
-                    <!-- First post :: Start -->
-                <div class="maincen lg:maincen">
-                    <div class="flex justify-between">
-                        <div class="flex space-x-2">
-                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover rounded-full w-9 h-9">
-                            <div class="flex flex-col">
-                                <div class="flex items-center space-x-2">
-                                    <p class="font-bold hover:underline">Domeh John Kelvin Tetteh</p>
-                                    <img src="./src/images/verify.png" alt="" class="w-4 h-4">
-                                    </svg>
-                                </div>
-                            
-                                <div class='flex items-center space-x-1'>
-                                    <p class="text-sm font-light">Just now.</p>
-                                    <img src="./src/images/planet-earth.png" alt="" class="w-4 h-4">
-                                </div>
-                            
-                            </div>
-                        </div>
-                        
-                        <div class='flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200'>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                            </svg>
-                        </div>
+                    <div class="flex items-center gap-3 p-2 rounded-md hover:bg-gray-200 hover:cursor-pointer">
+                        <img src="./src/images/cod.jpeg" alt="" class="rounded-full outline-none w-9 h-9">
+                        <span>Call of Duty</span>
                     </div>
-                    <!-- Message -->
-                    <div class="pt-2 text-sm tracking-wide">
-                        <p>
-                            Proud to have done this with HTML and tailwindCSS.
-                        </p>
-                    </div>
-                    <div class="w-full pt-3">
-                        <img src="./src/images/myfeed.jpeg" alt="" class="object-contain w-full">
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
-                            <div>
-                                <img src="./src/images/heart.png" alt="" class="h-7 w-7">
-                            </div>
-                        
-                            <div>
-                                <p class="font-light">19.3M</p>
-                            </div>
-                        
-                        </div>
-                        <div class="flex items-center font-normal text-[14px] text-gray-500 space-x-2">
-                            <div>
-                                <p>7.4K Comments</p>
-                            </div>
-                            <div>
-                                <p>4.2K Shares</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
-                        <div class="flex items-center space-x-2">
-                            <i class="fa-regular fa-thumbs-up fa-lg"></i>
-                            <p class="text-sm capitalize">like</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                            </svg>
-                            <p class="text-sm">Comment</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <img src="./src/images/share.png" alt="" class="w-5 h-4">
-                            <p class="text-sm">Share</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- End of first post -->
-
-                <!-- TODO: Change photo and content to suite name.-->
-
-                <!-- Second post:: start -->
-                <div class="maincen lg:maincen">
-                    <div class="flex justify-between">
-                        <div class="flex space-x-2">
-                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover rounded-full w-9 h-9">
-                            <div class="flex flex-col">
-                                <div class="flex items-center space-x-2">
-                                    <p class="font-bold hover:underline">Pinto Aaron Macquena</p>
-                                    <img src="./src/images/verify.png" alt="" class="w-4 h-4">
-                                    </svg>
-                                </div>
-                            
-                                <div class='flex items-center space-x-1'>
-                                    <p class="text-sm font-light">Just now.</p>
-                                    <img src="./src/images/planet-earth.png" alt="" class="w-4 h-4">
-                                </div>
-                            
-                            </div>
-                        </div>
-                        
-                        <div class='flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200'>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- Message -->
-                    <div class="pt-2 text-sm tracking-wide">
-                        <p>
-                            Proud to have done this with HTML and tailwindCSS.
-                        </p>
-                    </div>
-                    <div class="w-full pt-3">
-                        <img src="./src/images/myfeed.jpeg" alt=""  class="object-contain w-full">
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
-                            <div>
-                                <img src="./src/images/heart.png" alt="" class="h-7 w-7">
-                            </div>
-                        
-                            <div>
-                                <p class="font-light">19.3M</p>
-                            </div>
-                        
-                        </div>
-                        <div class="flex items-center font-normal text-[14px] text-gray-500 space-x-2">
-                            <div>
-                                <p>7.4K Comments</p>
-                            </div>
-                            <div>
-                                <p>4.2K Shares</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
-                        <div class="flex items-center space-x-2">
-                            <i class="fa-regular fa-thumbs-up fa-lg"></i>
-                            <p class="text-sm capitalize">like</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                            </svg>
-                            <p class="text-sm">Comment</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <img src="./src/images/share.png" alt="" class="w-5 h-4">
-                            <p class="text-sm">Share</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- End of Second post -->
-
-                <!-- TODO: change image and content to suite name of user.-->
-
-
-                <!-- Third post:: start -->
-                <div class="maincen lg:maincen">
-                    <div class="flex justify-between">
-                     <div class="flex space-x-2">
-                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover rounded-full w-9 h-9">
-                            <div class="flex flex-col">
-                                <div class="flex items-center space-x-2">
-                                    <p class="font-bold hover:underline">Kwaw Kumi Miezah</p>
-                                    <img src="./src/images/verify.png" alt="" class="w-4 h-4">
-                                    </svg>
-                                </div>
-                            
-                                <div class='flex items-center space-x-1'>
-                                    <p class="text-sm font-light">Just now.</p>
-                                    <img src="./src/images/planet-earth.png" alt="" class="w-4 h-4">
-                                </div>
-                            
-                            </div>
-                        </div>
-                        
-                        <div class='flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200'>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                            </svg>
-                        </div>
-                    </div>
-                    <!-- Message -->
-                    <div class="pt-2 text-sm tracking-wide">
-                        <p>
-                            Proud to have done this with HTML and tailwindCSS.
-                        </p>
-                    </div>
-                    <div class="w-full pt-3">
-                        <img src="./src/images/myfeed.jpeg" alt="" class="object-contain w-full">
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center pt-2 pb-2 pl-3 space-x-2 border-l-2 border-l-blue-600">
-                            <div>
-                                <img src="./src/images/heart.png" alt="" class="h-7 w-7">
-                            </div>
-                        
-                            <div>
-                                <p class="font-light">19.3M</p>
-                            </div>
-                        
-                        </div>
-                        <div class="flex items-center font-normal text-[14px] text-gray-500 space-x-2">
-                            <div>
-                                <p>7.4K Comments</p>
-                            </div>
-                            <div>
-                                <p>4.2K Shares</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex items-center justify-center pt-3 space-x-16 border-t-2 ">
-                        <div class="flex items-center space-x-2">
-                            <i class="fa-regular fa-thumbs-up fa-lg"></i>
-                            <p class="text-sm capitalize">like</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
-                            </svg>
-                            <p class="text-sm">Comment</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <img src="./src/images/share.png" alt="" class="w-5 h-4">
-                            <p class="text-sm">Share</p>
-                        </div>
-                    </div>
-                    
-                </div>
-                <!-- End of Third post -->
-            </section>
-        </div>
-    
-
-
-        <!-- Right Section -->
-        <!-- FIXME: Make this section fixed and not scroll when middle section is being scrolled. -->
-        <div class="hidden md:flex flex-col md:w-[26rem] lg:w-[40rem] mr-3 pt-8 h-max overflow-y-auto scrollbar-hide">
-            <!-- Friend request card -->
-            <div class=" w-[100%] rounded-xl p-3">
-                <div class="flex items-center space-x-2 text-center">
-                    <img src="./src/images/friends.png" alt="" class="w-4 h-4">
-                    <div class="flex items-center justify-between w-full">
-                        <p class="text-lg font-medium text-gray-500">Friend requests</p>
-                        <div><span class="text-center text-blue-600 text-md">See all</span></div>
-                    </div>
-                </div>
-                <div class="relative flex pt-3 space-x-3">
-                    <img src="./src/images/elon.jpg" alt="" class="w-10 h-10 rounded-full">
-                    
-                    <div class="flex items-center justify-between w-full">
-                        <div><p class="flex items-start font-bold tracking-wider text-md">Elon Musk</p><p class="text-sm text-gray-400">3 mutual friends</p></div>
-                        <div class="relative flex items-center justify-end gap-2">
-                            <span class="flex text-sm text-blue-500">1hr</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="10" viewBox="0 0 172 172"
-                                style=" fill:#000000;">
-                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
-                                    stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
-                                    font-size="none" text-anchor="none" style="mix-blend-mode: normal">
-                                    <path d="M0,172v-172h172v172z" fill="none"></path>
-                                    <g fill="#3498db">
-                                        <path
-                                            d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,37.9948 30.8052,68.8 68.8,68.8c37.9948,0 68.8,-30.8052 68.8,-68.8c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z">
-                                        </path>
-                                    </g>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                    
-                </div>
-
-                <div class="flex items-center justify-end gap-2 pt-3 text-center">
-                    <button class="w-32 text-white bg-blue-600 btn hover:bg-blue-500">Confirm</button>
-                    <button class="w-32 bg-gray-200 btn hover:bg-slate-300">Delete</button>
-                </div>
                 
+                </aside>
             </div>
 
-            <!-- Chats and Contacts -->
-            <!-- REVIEW: Add some hover effect of contacts -->
-            <div class="pt-4 mt-4 border-t-2">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <span class="text-lg font-semibold text-gray-400 capitalize">contacts</span>
-                    </div>
-                    <div class="flex items-center justify-between w-24">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-45 fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
-                        </svg>
-                    </div>
-                </div>
-                <div class="flex flex-col pt-4 space-y-3">
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/createroom/billgates.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Bill Gates</p>
-                    </div>
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/createroom/mark.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Mark Zuckerberg</p>
-                    </div>
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/Story/harri.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Obaapa Harriet Okyere</p>
-                    </div>
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/Story/kendra.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Tieku Kendra</p>
-                    </div>
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/createroom/isaac.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Isaac Natey Domeh</p>
-                    </div>
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/createroom/edem.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Akuaku Jonathan Edem</p>
-                    </div>
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/contacts/adogo.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Adogo James</p>
-                    </div>
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/createroom/reigner.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Pepe Reigner</p>
-                    </div>
-                    <div class="flex items-center space-x-5 text-sm">
-                        <img src="./src/images/contacts/Eunice.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
-                        <p>Eunice Nakie Domeh</p>
+            <!-- Middle Section -->
+            <div class="flex flex-col items-center justify-center w-full" id="section">
+                <section class="flex flex-col items-center pb-32 " >
+                    <div class="flex items-center justify-center gap-2 mb-6 pt-7">
+
+                        <!-- Stories -->
+                        <div class="w-[25rem] lg:w-[40rem] flex items-center justify-center gap-x-3 overflow-x-auto scrollbar-hide">
+                            <div class="relative text-center hover:contrast-[.8] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 cursor-pointer">
+                                <div class=''>
+                                    <img src="./src/images/IMG_20210815_190401_500~2.jpg"  alt="" class="object-cover h-48 rounded-md">
+                                </div>
+                                <div class='absolute w-32 h-12 bg-white top-36 rounded-b-md'>
+                                    <div class='mt-5'>
+                                        <span class="text-sm">Create Story</span>
+                                    </div>
+                                </div>
+                                <div class="absolute pl-12 top-32">
+                                    <img src="./src/images/plus.png" alt="" class="object-cover bg-white border-4 border-white rounded-full h-9 w-9">
+                                </div>
+                            </div>
+
+                            <div class="relative text-center hover:contrast-[.8] cursor-pointer">
+                                <div class='w-28'>
+                                    <img src="./src/images/Story/harri1.jpg" alt="" class="object-cover w-32 h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
+                                </div>
+                                <div class='absolute w-24 h-5 top-32 rounded-b-md'>
+                                    <div class='mt-5'>
+                                        <span class="text-sm text-white text-semibold">Obaapa Fafali</span>
+                                    </div>
+                                </div>
+                                <div class="absolute top-0 p-3">
+                                    <img src="./src/images/Story/harri.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
+                                </div>
+                            </div>
+
+                            <div class="relative text-center hover:contrast-[.8] cursor-pointer">
+                                <div class='w-28'>
+                                    <img src="./src/images/Story/treve1.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
+                                </div>
+                                <div class='absolute w-24 h-5 top-32 rounded-b-md'>
+                                    <div class='mt-5'>
+                                        <span class="text-sm text-white text-semibold">Treve Paul</span>
+                                    </div>
+                                </div>
+                                <div class="absolute top-0 p-3">
+                                    <img src="./src/images/Story/treve.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
+                                </div>
+                            </div>
+
+                            <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
+                                <div class='w-28'>
+                                    <img src="./src/images/Story/kendra.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
+                                </div>
+                                <div class='absolute w-24 h-5 top-32 rounded-b-md'>
+                                    <div class='mt-5'>
+                                        <span class="text-sm text-white text-semibold">Tieku Kendra</span>
+                                    </div>
+                                </div>
+                                <div class="absolute top-0 p-3">
+                                    <img src="./src/images/Story/tieku.jpg" alt="" class="bg-white border-4 border-blue-500 rounded-full h-9 w-9">
+                                </div>
+                            </div>
+                            
+                            <div class="hidden lg:flex relative text-center hover:contrast-[.8] cursor-pointer">
+                                <div class='w-28'>
+                                    <img src="./src/images/Story/pinto1.jpg" alt="" class="object-cover h-48 transition ease-in-out delay-150 rounded-md hover:-translate-y-1 hover:scale-110">
+                                </div>
+                                <div class='absolute w-24 h-5 top-32 rounded-b-md'>
+                                    <div class='mt-5'>
+                                        <span class="text-sm text-white truncate text-semibold">Pinto Aaron</span>
+                                    </div>
+                            
+                                </div>
+                                <div class="absolute top-0 p-3">
+                                    <img src="./src/images/Story/pinto.jpg" alt="" class="border-4 border-blue-500 rounded-full h-9 w-9">
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- <div class="bg-red-500">
+                            <img src="../src/images/right.png" alt="" class="bg-white rounded-full h-9 w-9">
+                        </div> -->
                     </div>
 
-                </div>
+                    <!-- What's on your mind? -->
+                    <div class="mb-4 bg-white rounded-lg sm:w-full">
+                        <div class="flex p-4 pb-3 space-x-3 border-b-2">
+                            <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            
+                            <input type="text" class="bg-gray-100 w-[90%] rounded-full outline-none placeholder:pl-5 placeholder:text-gray-500 hover:cursor-pointer hover:bg-gray-200" placeholder="What's on your mind, Jhohannes?" disabled="disabled">
+                        </div>
+                        <div class="flex justify-between gap-5 px-10 mt-5 text-sm font-bold text-gray-500">
+                            <div class="WOYM">
+                                <img src="./src/images/WOYM/video-player.png" alt="" class="w-6 h-6">
+                                <span class="text-sm">Live Video</span>
+                            </div>
+                            
+                            <div class="WOYM">
+                                <img src="./src/images/WOYM/gallery.png" alt="" class="w-6 h-6">
+                            <span class="text-sm">Photos/Videos</span>
+                            </div>
+                            
+                            <div class="hidden WOYM md:block">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-yellow-500" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                                <span class="text-sm">Feeling/Activity</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of What's on your mind! -->
+
+                    <!-- Div for Create room -->
+                    <!-- TODO: Make icons horizontally scrollable -->
+                    <div class="flex items-center gap-4 p-2 mb-4 bg-white rounded-full sm:w-full">
+                        <div class="flex items-center tracking-wide border-2 border-gray-100 rounded-full hover:bg-gray-200">
+                            <img src="./src/images/WOYM/video-button.png" alt="" class="h-7 w-7">
+                            <p class="text-sm font-semibold text-blue-500">Create room</p>
+                        </div>
+                        <div class="flex items-center justify-center gap-4 overflow-x-auto scrollbar-hide">
+                            <img src="./src/images/Story/juder.jpg" alt="" class='hidden w-10 h-10 rounded-full lg:flex'>
+                            <img src="./src/images/createroom/billgates.jpeg" alt="" class="hidden object-cover w-10 h-10 rounded-full md:block">
+                            <img src="./src/images/createroom/mark.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <img src="./src/images/createroom/reigner.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <img src="./src/images/createroom/edem.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <img src="./src/images/createroom/isaac.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                        </div>
+                    </div>
+                    <!--  End of Create room's div-->
+
+                    <!-- Timeline -->
+                        <!-- First post :: Start -->
+                    <div class="w-full bg-white rounded-xl">
+                        <div class="p-2">
+                            <div class="flex justify-between">
+                                <div class="flex space-x-2">
+                                <img src="./src/images/IMG_20210815_190401_500~2.jpg" alt="" class="object-cover rounded-full w-9 h-9">
+                                <div class="flex flex-col">
+                                    <div class="flex items-center space-x-2">
+                                        <p class="font-bold hover:underline">Domeh John Kelvin Tetteh</p>
+                                        <img src="./src/images/verify.png" alt="" class="w-4 h-4">
+                                        </svg>
+                                    </div>
+                                
+                                    <div class='flex items-center space-x-1'>
+                                        <p class="text-sm font-light">Just now.</p>
+                                        <img src="./src/images/planet-earth.png" alt="" class="w-4 h-4">
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                            <div class='flex items-center justify-center w-10 h-10 rounded-full hover:bg-gray-200'>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <!-- Message -->
+                        <div class="pt-2 text-sm tracking-wide">
+                            <p>
+                                Proud to have done this with HTML and tailwindCSS.
+                            </p>
+                        </div>
+                        <div class="w-full pt-3">
+                        </div>
+                        <img src="./src/images/myfeed.jpeg" alt="" class="object-cover w-full" >
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center pt-2 pb-2 border-l-2 border-l-blue-600">
+                                <div>
+                                    <img src="./src/images/heart.png" alt="" class="h-7 w-7">
+                                </div>
+                            
+                                <div>
+                                    <p class="font-light">19.3M</p>
+                                </div>
+                            
+                            </div>
+                            <div class="flex items-center font-normal text-[14px] text-gray-500 space-x-2">
+                                <div>
+                                    <p>7.4K Comments</p>
+                                </div>
+                                <div>
+                                    <p>4.2K Shares</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-center gap-16 pt-3 border-t-2 ">
+                            <div class="flex items-center space-x-2">
+                                <i class="fa-regular fa-thumbs-up fa-lg"></i>
+                                <p class="text-sm capitalize">like</p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z" />
+                                </svg>
+                                <p class="text-sm">Comment</p>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <img src="./src/images/share.png" alt="" class="w-5 h-4">
+                                <p class="text-sm">Share</p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!-- End of first post -->
+
+                    <!-- TODO: Change photo and content to suite name.-->
+
                 
+                </section>
+            </div>
+
+            
+            <!-- Right Section -->
+            <!-- FIXME: Make this section fixed and not scroll when middle section is being scrolled. -->
+            <div class="w-[40%] flex-col hidden pt-8 mr-3 overflow-y-auto  xl:flex h-max scrollbar-hide">
+                <!-- Friend request card -->
+                <div class=" w-[100%] rounded-xl p-3">
+                    <div class="flex items-center space-x-2 text-center">
+                        <img src="./src/images/friends.png" alt="" class="w-4 h-4">
+                        <div class="flex items-center justify-between w-full">
+                            <p class="text-lg font-medium text-gray-500">Friend requests</p>
+                            <div><span class="text-center text-blue-600 text-md">See all</span></div>
+                        </div>
+                    </div>
+                    <div class="relative flex pt-3 space-x-3">
+                        <img src="./src/images/elon.jpg" alt="" class="w-10 h-10 rounded-full">
+                        
+                        <div class="flex items-center justify-between w-full">
+                            <div><p class="flex items-start font-bold tracking-wider text-md">Elon Musk</p><p class="text-sm text-gray-400">3 mutual friends</p></div>
+                            <div class="relative flex items-center justify-end gap-2">
+                                <span class="flex text-sm text-blue-500">1hr</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="10" height="10" viewBox="0 0 172 172"
+                                    style=" fill:#000000;">
+                                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                        stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                        font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                                        <g fill="#3498db">
+                                            <path
+                                                d="M86,17.2c-37.9948,0 -68.8,30.8052 -68.8,68.8c0,37.9948 30.8052,68.8 68.8,68.8c37.9948,0 68.8,-30.8052 68.8,-68.8c0,-37.9948 -30.8052,-68.8 -68.8,-68.8z">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="flex items-center justify-end gap-2 pt-3 text-center">
+                        <button class="w-32 text-white bg-blue-600 btn hover:bg-blue-500">Confirm</button>
+                        <button class="w-32 bg-gray-200 btn hover:bg-slate-300">Delete</button>
+                    </div>
+                    
+                </div>
+
+                <!-- Chats and Contacts -->
+                <!-- REVIEW: Add some hover effect of contacts -->
+                <div class="pt-4 mt-4 border-t-2">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <span class="text-lg font-semibold text-gray-400 capitalize">contacts</span>
+                        </div>
+                        <div class="flex items-center justify-between w-24">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-45 fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pt-4 space-y-3">
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/createroom/billgates.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Bill Gates</p>
+                        </div>
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/createroom/mark.jpeg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Mark Zuckerberg</p>
+                        </div>
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/Story/harri.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Obaapa Harriet Okyere</p>
+                        </div>
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/Story/kendra.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Tieku Kendra</p>
+                        </div>
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/createroom/isaac.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Isaac Natey Domeh</p>
+                        </div>
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/createroom/edem.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Akuaku Jonathan Edem</p>
+                        </div>
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/contacts/adogo.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Adogo James</p>
+                        </div>
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/createroom/reigner.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Pepe Reigner</p>
+                        </div>
+                        <div class="flex items-center space-x-5 text-sm">
+                            <img src="./src/images/contacts/Eunice.jpg" alt="" class="object-cover w-10 h-10 rounded-full">
+                            <p>Eunice Nakie Domeh</p>
+                        </div>
+
+                    </div>
+                    
+                </div>
             </div>
         </div>
     </div>
+         <!-- <div class="bg-blue-400 w-[20%]"></div> -->
 
-
-    <script rel="javascript" src="js/index.js"></script>
+    <script rel="javascript" src="/dist/index.js"></script>
 </body>
 
 </html>
